@@ -59,16 +59,6 @@ function Header() {
               </ul>
             </div>
           </div>
-          <div className="header__hero">
-            <h1>Розробка сайтів для бізнесу</h1>
-            <p>
-              Webstea - це команда пристрасних професіоналів, які прагнуть
-              революціонізувати сферу веб-розробки.
-            </p>
-            <a href="#" className="btn">
-              Замовити сайт
-            </a>
-          </div>
         </div>
       </header>
     </div>
