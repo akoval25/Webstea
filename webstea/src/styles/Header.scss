@@ -1,0 +1,56 @@
+$text-color: #fdfdfe;
+$main-bg: #070707;
+$light-bg: #202020;
+$blue: #004f94;
+$orange: #ea6200;
+$orange-dark: #5c2700;
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px;
+}
+
+.logo__link {
+}
+
+.menu {
+  max-width: 750px;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang__list {
+  display: flex;
+  gap: 10px;
+}
+
+.menu__item,
+.lang__item {
+  &:hover .menu__link,
+  &:hover .lang__link {
+    color: $orange;
+    transition: all 0.3s;
+  }
+}
+
+.menu__link,
+.lang__link {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.lang {
+}
+.lang__list {
+}
+.lang__item {
+}
+.lang__link.current {
+  color: $orange;
+}
