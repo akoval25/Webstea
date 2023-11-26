@@ -1,5 +1,6 @@
 import logo from "../images/logo.svg";
 import "../styles/Header.css";
+import "../styles/Header.scss";
 
 function Header() {
   return (
@@ -47,7 +48,7 @@ function Header() {
             <div className="lang">
               <ul className="lang__list">
                 <li className="lang__item">
-                  <a href="#" className="lang__link">
+                  <a href="#" className="lang__link current">
                     UA
                   </a>
                 </li>
