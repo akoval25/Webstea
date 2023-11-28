@@ -1,0 +1,44 @@
+$text-color: #fdfdfe;
+$main-bg: #070707;
+$light-bg: #202020;
+$blue: #004f94;
+$orange: #ea6200;
+$orange-dark: #5c2700;
+
+.about {
+}
+.about__top {
+  margin-bottom: 124px;
+}
+
+.about__top h2 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 55px;
+  margin-bottom: 124px;
+}
+.about__top p {
+  text-align: center;
+  line-height: 32px;
+}
+
+.about__bottom {
+  background-color: $light-bg;
+}
+.about__bottom-inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px 58px;
+}
+.about__bottom-item {
+  text-align: center;
+}
+.about__bottom-num {
+  color: $blue;
+  font-family: "Unbounded", sans-serif;
+  font-size: 64px;
+  line-height: 94px;
+}
+.about__bottom-text {
+  font-size: 24px;
+  line-height: 48px;
+}

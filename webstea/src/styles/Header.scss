@@ -9,14 +9,14 @@ $orange-dark: #5c2700;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0px;
+  padding: 22px 0px 0px;
 }
 
 .logo__link {
 }
 
 .menu {
-  max-width: 750px;
+  max-width: 735px;
   width: 100%;
 }
 
@@ -43,6 +43,7 @@ $orange-dark: #5c2700;
 .lang__link {
   text-decoration: none;
   color: $text-color;
+  font-family: "Poppins", sans-serif;
 }
 
 .lang {
