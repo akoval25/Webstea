@@ -48,13 +48,13 @@ function Header() {
             <div className="lang">
               <ul className="lang__list">
                 <li className="lang__item">
-                  <a href="#" className="lang__link current">
-                    UA
+                  <a href="#" className="lang__link">
+                    EN
                   </a>
                 </li>
                 <li className="lang__item">
-                  <a href="#" className="lang__link">
-                    EN
+                  <a href="#" className="lang__link current">
+                    UA
                   </a>
                 </li>
               </ul>
