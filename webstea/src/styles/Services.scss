@@ -1,0 +1,105 @@
+@import 'Variables';
+
+/* SERVICES */
+
+.services {
+    margin-top: 150px;
+  }
+  
+  .services h2 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 55px;
+    margin-bottom: 93px;
+  }
+  .services__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 47px;
+  }
+  .services__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 420px;
+    padding: 20px;
+    box-shadow: inset 0 0 0 2px #272525;
+    background: linear-gradient(90deg, #282626 60%, rgba(40, 38, 38, 0) 95%);
+    background-size: 200% 100%;
+    background-position: 80% 0%;
+    transition: all 0.5s;
+    &:hover {
+      background-position: 0% 0%;
+    }
+  }
+  .services__item::before,
+  .services__item::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s;
+  }
+  .services__item::before {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+  }
+  .services__item::after {
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+  
+  .services__item:hover::before,
+  .services__item:hover::after {
+    border-color: $orange;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .services__item:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .services__item:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .services__item h3 {
+    font-size: 24px;
+    margin-bottom: 49px;
+  }
+  .services__item p {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
+  .services__link {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Unbounded", sans-serif;
+    margin-top: auto;
+    margin-left: auto;
+    align-items: end;
+    padding-right: 50px;
+    position: relative;
+    transition: all 0.3s;
+    z-index: 1;
+    &::after {
+      content: url(../images/arrow_right_small.svg);
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      height: 18px;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: $orange;
+      &::after {
+        filter: invert(60%) sepia(98%) saturate(2768%) hue-rotate(10deg)
+          brightness(100%) contrast(101%);
+      }
+    }
+  }
