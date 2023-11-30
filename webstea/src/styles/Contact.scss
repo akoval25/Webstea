@@ -1,6 +1,82 @@
-@import 'Variables';
+@import "Variables";
 
 .contact {
-    background-color: $orange;
-    
+  margin-bottom: 150px;
+}
+
+.contact h2 {
+  max-width: 800px;
+  margin-bottom: 85px;
+}
+
+.contact__inner {
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form__row {
+  display: flex;
+  gap: 40px;
+}
+.form__input,
+.form__textarea {
+  background: transparent;
+  padding: 12px 23px;
+  color: $text-color;
+  border: 1px solid $orange;
+  width: 100%;
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color;
   }
+}
+.select__inner {
+  width: 100%;
+  position: relative;
+}
+.form__select {
+  background: transparent;
+  padding: 16px 23px;
+  color: $text-color;
+  border: 1px solid $orange;
+  width: 100%;
+  appearance: none;
+  /* safari */
+  -webkit-appearance: none;
+}
+.form__select option,
+option:checked {
+  color: $main-bg;
+}
+
+.form__textarea {
+  background: transparent;
+  padding: 12px 23px;
+  color: $text-color;
+  border: 1px solid $orange;
+  width: 100%;
+}
+
+.form .btn {
+  max-width: min-content;
+  cursor: pointer;
+}
+
+.input__inner {
+  width: 100%;
+}
+.select__inner {
+  width: 100%;
+  position: relative;
+  &::after {
+    content: url(../images/arrow-down.svg);
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+  }
+}
