@@ -1,9 +1,4 @@
-$text-color: #fdfdfe;
-$main-bg: #070707;
-$light-bg: #202020;
-$blue: #004f94;
-$orange: #ea6200;
-$orange-dark: #5c2700;
+@import 'Variables';
 
 .header__top {
   display: flex;
