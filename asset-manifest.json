@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/Webstea/static/css/main.90b0ad32.css",
-    "main.js": "/Webstea/static/js/main.805d6ab8.js",
+    "main.css": "/Webstea/static/css/main.4ea2c7ec.css",
+    "main.js": "/Webstea/static/js/main.ab54a751.js",
     "static/js/787.a881cd91.chunk.js": "/Webstea/static/js/787.a881cd91.chunk.js",
+    "static/media/hero.png": "/Webstea/static/media/hero.a6e80ae8a8f0f0dc329c.png",
     "static/media/logo.svg": "/Webstea/static/media/logo.03c0be919fc9cd3cdc08da60885c07c6.svg",
     "index.html": "/Webstea/index.html",
-    "main.90b0ad32.css.map": "/Webstea/static/css/main.90b0ad32.css.map",
-    "main.805d6ab8.js.map": "/Webstea/static/js/main.805d6ab8.js.map",
+    "static/media/arrow_right.svg": "/Webstea/static/media/arrow_right.18081fa611ae513028c8.svg",
+    "static/media/arrow_right_small.svg": "/Webstea/static/media/arrow_right_small.38ff20efe335d712205a.svg",
+    "main.4ea2c7ec.css.map": "/Webstea/static/css/main.4ea2c7ec.css.map",
+    "main.ab54a751.js.map": "/Webstea/static/js/main.ab54a751.js.map",
     "787.a881cd91.chunk.js.map": "/Webstea/static/js/787.a881cd91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90b0ad32.css",
-    "static/js/main.805d6ab8.js"
+    "static/css/main.4ea2c7ec.css",
+    "static/js/main.ab54a751.js"
   ]
 }
