@@ -387,8 +387,12 @@ body {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1400px;
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px min(20px, 4%);
   margin: 0 auto;
+}
+
+a {
+  color: $text-color;
 }
