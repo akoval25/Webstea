@@ -1,6 +1,53 @@
-@import 'Variables';
+@import "Variables";
 
 .blog {
-    background-color: $blue;
-    
-  }
+  margin-bottom: 150px;
+}
+
+.blog h2 {
+  margin-bottom: 150px;
+}
+.blog__inner {
+}
+.blog__slider {
+  padding-bottom: 80px;
+}
+.blog__slider .swiper-scrollbar {
+  bottom: 0;
+  height: 15px;
+  background: linear-gradient(180deg, #4d4d4d 0%, rgba(77, 77, 77, 0) 100%);
+  z-index: 1;
+  border-radius: 0;
+}
+.blog__slider .swiper-scrollbar-drag {
+  background: linear-gradient(180deg, #ea6200 0%, rgba(234, 98, 0, 0) 100%);
+  border-radius: 0;
+}
+
+.blog__slide {
+  padding: 16px 8px 23px 28px;
+  max-width: 483px;
+  aspect-ratio: 483/350;
+  background-image: url(../images/blog-bg-1.png);
+}
+.blog__slide-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog__slide-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.blog__slide-content p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog__slide-content .btn {
+  margin-top: auto;
+  margin-left: auto;
+}

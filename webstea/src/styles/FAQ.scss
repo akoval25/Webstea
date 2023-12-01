@@ -1,6 +1,65 @@
-@import 'Variables';
+@import "Variables";
 
 .faq {
-    background-color: $orange-dark;
-    
-  }
+  margin-bottom: 150px;
+}
+.faq h2 {
+  margin-bottom: 80px;
+}
+.faq__inner {
+}
+.accordion__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+.accordion__item {
+  border: 1px solid $orange;
+  padding: 22px 46px;
+}
+
+.accordion__item-title {
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion__item-title::after {
+  content: url(../images/arrow-down.svg);
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  transition: all 0.3s;
+}
+
+.accordion__item-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  max-height: 0;
+}
+
+.accordion__item-content p {
+  margin-top: 30px;
+}
+.accordion__item-content * {
+  max-width: 1000px;
+}
+
+.accordion__item-content.active {
+  max-height: none;
+}
+
+.accordion__item:has(.accordion__item-content.active) {
+  border: 1px solid $blue;
+}
+
+.accordion__item:has(.accordion__item-content.active)
+  .accordion__item-title::after {
+  transform: translateY(-50%) rotate(180deg);
+  transition: all 0.3s;
+  filter: invert(35%) sepia(47%) saturate(2922%) hue-rotate(188deg)
+    brightness(95%) contrast(107%);
+}
