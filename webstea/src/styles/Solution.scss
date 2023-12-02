@@ -1,6 +1,71 @@
-@import 'Variables';
+@import "Variables";
 
 .solution {
-    background-color: $blue;
-    
-  }
+  margin-bottom: 150px;
+}
+
+.solution h2 {
+  max-width: 610px;
+  margin-bottom: 100px;
+}
+.solution__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  counter-reset: list;
+}
+.solution__item {
+  max-width: 900px;
+  position: relative;
+}
+
+.solution__item::before {
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  font-size: 128px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  color: $orange;
+}
+
+.solution__item:nth-child(odd)::before {
+  left: 0;
+  top: 0;
+}
+
+.solution__item:nth-child(even)::before {
+  right: 0;
+  top: 0;
+}
+
+.solution__item:nth-child(odd) {
+  padding-left: 120px;
+}
+
+.solution__item:nth-child(even) {
+  margin-left: auto;
+  padding-right: 120px;
+}
+
+.solution__item h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 8px solid $blue;
+  margin-bottom: 40px;
+  max-width: max-content;
+}
+
+.solution__item:nth-child(odd) h3 {
+}
+
+.solution__item:nth-child(even) h3 {
+  text-align: right;
+  margin-left: auto;
+}
+
+.solution__item p {
+  font-size: 16px;
+  font-weight: 400;
+}

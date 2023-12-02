@@ -1,0 +1,58 @@
+/* filter: invert(60%) sepia(98%) saturate(2775%) hue-rotate(-16deg)
+    brightness(100%) contrast(101%); */
+@import "Variables";
+.footer {
+  padding: 80px 0px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__list {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.footer__item {
+}
+.footer__link {
+  transition: all 0.3s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__item:hover .footer__link {
+  color: $orange;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 28px;
+}
+.footer__contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__contact-item p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__contact-item a {
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.footer__contact-social {
+  margin-top: 70px;
+  display: flex;
+  gap: 40px;
+}

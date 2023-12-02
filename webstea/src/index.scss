@@ -396,3 +396,17 @@ body {
 a {
   color: $text-color;
 }
+
+h2 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 55px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+}

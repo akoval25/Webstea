@@ -1,10 +1,11 @@
-@import 'Variables';
+@import "Variables";
 
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 0px 0px;
+  gap: 35px;
 }
 
 .logo__link {
@@ -49,4 +50,106 @@
 }
 .lang__link.current {
   color: $orange;
+}
+
+.menu__btn-wrapper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu__btn-wrapper {
+    display: block;
+    padding: 15px;
+    background-color: $blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo__link img {
+    max-width: 80%;
+  }
+  .menu {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 0;
+    right: 20px;
+    background-color: #004f9480;
+    backdrop-filter: blur(8px);
+    max-width: 80%;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .menu.menu--active {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  .menu__list {
+    flex-direction: column;
+  }
+  .menu__item:first-child .menu__link {
+    border-top: 2px solid $blue;
+  }
+  .menu__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border-bottom: 2px solid $blue;
+  }
+  .burger {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: $text-color;
+    transition: all 0.5s;
+  }
+}
+
+.menu__btn {
+  position: relative;
+  width: 30px;
+  margin: 0 auto;
+  padding: 12px 0;
+  background-color: transparent;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: $text-color;
+    transition: all 0.5s;
+    left: 0;
+    right: 0;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &.menu__btn--active span {
+    background: $text-color;
+    opacity: 0;
+  }
+  &.menu__btn--active::before {
+    transform: rotate(-45deg);
+    top: 12px;
+    background: $text-color;
+    transition: all 0.5s;
+  }
+  &.menu__btn--active::after {
+    transform: rotate(45deg);
+    bottom: 12px;
+    background: $text-color;
+    transition: all 0.5s;
+  }
 }

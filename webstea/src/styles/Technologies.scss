@@ -1,5 +1,39 @@
-@import 'Variables';
+@import "Variables";
 
 .technologies {
-    background-color: $blue;
+  margin-bottom: 150px;
+}
+
+.technologies h2 {
+  margin-bottom: 72px;
+  max-width: 700px;
+  margin-left: auto;
+}
+
+.technologies__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.technologies__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.--code {
+  gap: 90px;
+}
+.--cms {
+  gap: 67px;
+}
+.--other {
+  gap: 88px;
+}
+.technologies__group img {
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
   }
+}
