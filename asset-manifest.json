@@ -1,19 +1,37 @@
 {
   "files": {
-    "main.css": "/Webstea/static/css/main.4ea2c7ec.css",
-    "main.js": "/Webstea/static/js/main.ab54a751.js",
+    "main.css": "/Webstea/static/css/main.84c60ea6.css",
+    "main.js": "/Webstea/static/js/main.9be898e9.js",
     "static/js/787.a881cd91.chunk.js": "/Webstea/static/js/787.a881cd91.chunk.js",
+    "static/media/info-img.png": "/Webstea/static/media/info-img.a4b2bf2b2f384867d4e2.png",
+    "static/media/stages-slide-bg-2.png": "/Webstea/static/media/stages-slide-bg-2.5b6afed570accfa8e4c6.png",
+    "static/media/stages-slide-bg-1.png": "/Webstea/static/media/stages-slide-bg-1.bb23c1bdb89de0176dae.png",
+    "static/media/stages-slide-bg-4.png": "/Webstea/static/media/stages-slide-bg-4.575ddc53893157b6cc54.png",
+    "static/media/stages-slide-bg-5.png": "/Webstea/static/media/stages-slide-bg-5.b9810d906e02b7b39a2c.png",
     "static/media/hero.png": "/Webstea/static/media/hero.a6e80ae8a8f0f0dc329c.png",
+    "static/media/stages-slide-bg-3.png": "/Webstea/static/media/stages-slide-bg-3.0a1a75f7770031a47e09.png",
+    "static/media/blog-bg-1.png": "/Webstea/static/media/blog-bg-1.586e83cb0b12816e4685.png",
+    "static/media/site-screenshot-1.jpg": "/Webstea/static/media/site-screenshot-1.d3efec9bb93d7dd66b97.jpg",
     "static/media/logo.svg": "/Webstea/static/media/logo.03c0be919fc9cd3cdc08da60885c07c6.svg",
+    "static/media/Instagram.svg": "/Webstea/static/media/Instagram.29f22f0031c676081cea855b1dff189a.svg",
+    "static/media/Behance.svg": "/Webstea/static/media/Behance.61da3a1534cf0dea207e5306d0ca8e09.svg",
+    "static/media/services__bottom-img-2.svg": "/Webstea/static/media/services__bottom-img-2.ecf049a0739d707e6b938a612552c1c6.svg",
+    "static/media/Telegram.svg": "/Webstea/static/media/Telegram.cdad5febe1db1d83500589733afa5478.svg",
+    "static/media/services__bottom-img-3.svg": "/Webstea/static/media/services__bottom-img-3.4c9fa2760d44dd214fe29a719b73f15f.svg",
+    "static/media/services__bottom-img-4.svg": "/Webstea/static/media/services__bottom-img-4.a398667e5b9a9f739fa838a20db4ec04.svg",
+    "static/media/Facebook.svg": "/Webstea/static/media/Facebook.d368cdee0b79756b6ba7d71721d3e28b.svg",
+    "static/media/Linkedin.svg": "/Webstea/static/media/Linkedin.25f0f705d939cc836610977e54f2034e.svg",
+    "static/media/services__bottom-img-1.svg": "/Webstea/static/media/services__bottom-img-1.5e116615d369d107b04cbfabab366679.svg",
     "index.html": "/Webstea/index.html",
     "static/media/arrow_right.svg": "/Webstea/static/media/arrow_right.18081fa611ae513028c8.svg",
     "static/media/arrow_right_small.svg": "/Webstea/static/media/arrow_right_small.38ff20efe335d712205a.svg",
-    "main.4ea2c7ec.css.map": "/Webstea/static/css/main.4ea2c7ec.css.map",
-    "main.ab54a751.js.map": "/Webstea/static/js/main.ab54a751.js.map",
+    "static/media/arrow-down.svg": "/Webstea/static/media/arrow-down.3b6efbc091343ce96df3.svg",
+    "main.84c60ea6.css.map": "/Webstea/static/css/main.84c60ea6.css.map",
+    "main.9be898e9.js.map": "/Webstea/static/js/main.9be898e9.js.map",
     "787.a881cd91.chunk.js.map": "/Webstea/static/js/787.a881cd91.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ea2c7ec.css",
-    "static/js/main.ab54a751.js"
+    "static/css/main.84c60ea6.css",
+    "static/js/main.9be898e9.js"
   ]
 }
