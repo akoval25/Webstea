@@ -6,6 +6,7 @@
 .advantages__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .advantages__item {
   max-width: 210px;
