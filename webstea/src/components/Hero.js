@@ -1,18 +1,19 @@
 import "../styles/Hero.css";
 import "../styles/Hero.scss";
+import React from 'react';
+import { useLang } from '../scripts/LangContext.js';
 
 function Hero() {
+  const { getLangText } = useLang();
+
   return (
     <section className="hero">
       <div className="container">
         <div className="hero__inner">
-          <h1>Розробка сайтів для бізнесу</h1>
-          <p>
-            Webstea - це команда пристрасних професіоналів, які прагнуть
-            революціонізувати сферу веб-розробки.
-          </p>
-          <a href="#" className="btn">
-            Замовити сайт
+          <h1 className="lng-hero-title">{getLangText("hero-title")}</h1>
+          <p className="lng-hero-description">{getLangText("hero-description")}</p>
+          <a href="#" className="btn lng-hero-link">
+            {getLangText("hero-link")}
           </a>
         </div>
       </div>
