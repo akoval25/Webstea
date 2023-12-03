@@ -17,10 +17,16 @@ import FAQ from "./components/FAQ.js";
 import Solution from "./components/Solution.js";
 import Footer from "./components/Footer.js";
 import reportWebVitals from "./reportWebVitals";
+import { LangProvider } from './scripts/LangContext.js';
+import LanguageSelector from './scripts/currentLang.js';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <LangProvider>
+    <div>
+    <LanguageSelector />
     <Header />
     <Hero />
     <About />
@@ -29,16 +35,17 @@ root.render(
     <Stages />
     <Advantages />
     <Technologies />
-    <Portfolio />
-    <Contact />
-    <Blog />
-    <FAQ />
-    <Solution />
-    <Footer />
+      <Portfolio />
+      <Contact />
+      <Blog />
+      <FAQ />
+      <Solution />
+      <Contact />
+      <Footer />
+    </div>
+    </LangProvider>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

@@ -2,6 +2,8 @@ import logo from "../images/logo.svg";
 import "../styles/Header.css";
 import "../styles/Header.scss";
 import { useRef } from "react";
+import LanguageSelector from  "../scripts/currentLang.js";
+
 
 function Header() {
   const menuBtnRef = useRef(null);
@@ -60,20 +62,7 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <div className="lang">
-              <ul className="lang__list">
-                <li className="lang__item">
-                  <a href="#" className="lang__link">
-                    EN
-                  </a>
-                </li>
-                <li className="lang__item">
-                  <a href="#" className="lang__link current">
-                    UA
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <LanguageSelector />
             <div className="menu__btn-wrapper">
               <button
                 className="menu__btn"
@@ -91,3 +80,6 @@ function Header() {
 }
 
 export default Header;
+
+
+
