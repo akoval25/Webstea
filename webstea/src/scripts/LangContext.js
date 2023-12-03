@@ -1,12 +1,12 @@
-import React, { createContext, useContext, useState } from 'react';
+ import React, { createContext, useContext, useState } from 'react';
 
-const LangContext = createContext();
+ const LangContext = createContext();
 
-export const LangProvider = ({ children }) => {
-//   const [currentLang, setCurrentLang] = useState('ua');
-const userBrowserLanguage = navigator.language || navigator.userLanguage;
-const defaultLanguage = userBrowserLanguage.startsWith('ua') ? 'ua' : 'en';
-const [currentLang, setCurrentLang] = useState(defaultLanguage);
+ export const LangProvider = ({ children }) => {
+  const userBrowserLanguage = navigator.language || navigator.userLanguage;
+  const isUkrainianLanguage = userBrowserLanguage.toLowerCase() === 'uk';
+  const defaultLanguage = isUkrainianLanguage ? 'ua' : 'en';
+  const [currentLang, setCurrentLang] = useState(defaultLanguage);
 
   const setLang = (lang) => {
     setCurrentLang(lang);
@@ -29,7 +29,7 @@ const [currentLang, setCurrentLang] = useState(defaultLanguage);
     if (langArr[currentLang] && langArr[currentLang][key]) {
       return langArr[currentLang][key];
     }
-    return ''; 
+    return '';
   };
 
   return (
