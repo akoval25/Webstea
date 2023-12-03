@@ -26,7 +26,6 @@ root.render(
   <React.StrictMode>
     <LangProvider>
     <div>
-    <LanguageSelector />
     <Header />
     <Hero />
     <About />
