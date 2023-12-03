@@ -2,7 +2,7 @@ import "../styles/About.scss";
 
 function About() {
   return (
-    <section className="about">
+    <section className="about section__mb">
       <div className="about__top">
         <div className="container">
           <h2>Про нас</h2>
@@ -39,7 +39,6 @@ function About() {
         </div>
       </div>
     </section>
-
   );
 }
 

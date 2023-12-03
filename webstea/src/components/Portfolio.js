@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 
 function Portfolio() {
   return (
-    <section className="portfolio">
+    <section className="portfolio section__mb">
       <div className="container">
         <h2>Наші проєкти</h2>
         <div className="portfolio__inner">

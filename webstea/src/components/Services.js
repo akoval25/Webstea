@@ -6,11 +6,11 @@ import servicesIcon4 from "../images/services__bottom-img-4.svg";
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services section__mb">
       <div className="container">
         <h2>Основні послуги</h2>
         <div className="services__inner">
-          <div className="services__item">
+          <a href="#" className="services__item">
             <h3>Landing page</h3>
             <p>
               Сайт з унікальним дизайном з 1 довгої сторінки.Завдання лендинга
@@ -20,8 +20,8 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
-          <div className="services__item">
+          </a>
+          <a href="#" className="services__item">
             <h3>Сайт візитка</h3>
             <p>
               Сайт з 1-3 сторінок з персоналізованим дизайном.Коротко доносить
@@ -31,8 +31,8 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
-          <div className="services__item">
+          </a>
+          <a href="#" className="services__item">
             <h3>Інтернет магазин</h3>
             <p>
               Розробка магазину для продажу товарів через Інтернет. Інтернет
@@ -42,8 +42,8 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
-          <div className="services__item">
+          </a>
+          <a href="#" className="services__item">
             <h3>Корпоративний сайт</h3>
             <p>
               Створення відкритого або закритого типу веб-ресурсу Вашої
@@ -53,8 +53,8 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
-          <div className="services__item">
+          </a>
+          <a href="#" className="services__item">
             <h3>Сайт каталог</h3>
             <p>
               Містить каталог товарів з можливістю фільтрації, але без цін і
@@ -64,8 +64,8 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
-          <div className="services__item">
+          </a>
+          <a href="#" className="services__item">
             <h3>Індивидуальний проект</h3>
             <p>
               Розробка унікального сайту будь-якої складності, складемо
@@ -75,7 +75,7 @@ function Services() {
             <a href="#" className="services__link">
               Дізнатися більше
             </a>
-          </div>
+          </a>
         </div>
         <div className="services__bottom">
           <div className="services__bottom-item">

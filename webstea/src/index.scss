@@ -399,7 +399,7 @@ a {
 
 h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: clamp(20px, 4vw, 55px);
+  font-size: clamp(20px, 6vw, 55px);
 }
 
 p {
@@ -441,9 +441,16 @@ p {
   transform: translateY(-50%);
 }
 
+.section__mb {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 768px) {
   .btn {
     font-size: 16px;
+  }
+  .section__mb {
+    margin-bottom: 100px;
   }
 }
 
@@ -451,6 +458,9 @@ p {
   .btn {
     font-size: 14px;
     line-height: 28px;
-    padding: 9px 80px 8px 20px;
+    padding: 7px 80px 6px 20px;
+  }
+  .section__mb {
+    margin-bottom: 55px;
   }
 }

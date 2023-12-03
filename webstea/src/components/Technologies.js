@@ -17,7 +17,7 @@ import icon15 from "../images/icon_github.png";
 
 function Technologies() {
   return (
-    <section className="technologies">
+    <section className="technologies section__mb">
       <div className="container">
         <h2 className="text-right">Технології, з якими ми працюємо</h2>
         <div className="technologies__inner">

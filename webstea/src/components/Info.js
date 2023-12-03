@@ -2,9 +2,9 @@ import "../styles/Info.scss";
 
 function Info() {
   return (
-    <section className="info">
-      <div className="info__inner">
-        <div className="container">
+    <section className="info section__mb">
+      <div className="container">
+        <div className="info__inner">
           <div className="info__text">
             <h3>
               <span className="orange">Хороший сайт</span> неможливо зробити за

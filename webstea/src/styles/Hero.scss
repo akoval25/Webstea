@@ -28,6 +28,7 @@
 @media (max-width: 768px) {
   .hero__inner {
     background-size: 70%;
+    padding-bottom: 0px;
   }
   .hero__inner p {
     margin-bottom: 70px;
@@ -41,13 +42,13 @@
     background-position: -6% 10%;
   }
   .hero__inner h1 {
-    margin-bottom: 250px;
+    margin-bottom: 220px;
   }
   .hero__inner p {
     margin-left: 0;
     text-align: left;
     margin-bottom: 40px;
-    max-width: 240px;
+    max-width: 100%;
     text-wrap: balance;
   }
 }

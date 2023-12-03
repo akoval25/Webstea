@@ -1,7 +1,6 @@
 @import "Variables";
 
 .about {
-  margin-bottom: 150px;
 }
 .about__top {
   margin-bottom: 124px;
@@ -9,12 +8,12 @@
 
 .about__top h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: 55px;
   margin-bottom: 124px;
 }
 .about__top p {
   text-align: center;
   line-height: 32px;
+  text-wrap: balance;
 }
 
 .about__bottom {
@@ -37,4 +36,38 @@
 .about__bottom-text {
   font-size: 24px;
   line-height: 48px;
+}
+
+@media (max-width: 768px) {
+  .about__top h2 {
+    margin-bottom: 100px;
+  }
+  .about__bottom-inner {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .about__top {
+    margin-bottom: 70px;
+  }
+  .about__bottom-num {
+    font-size: 32px;
+    line-height: 64px;
+  }
+  .about__bottom-text {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about__top h2 {
+    margin-bottom: 70px;
+  }
+  .about__top {
+    margin-bottom: 50px;
+  }
+  .about__bottom-inner {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

@@ -2,7 +2,7 @@ import "../styles/Contact.scss";
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact section__mb">
       <div className="container">
         <h2>Давайте обговоримо вашу ідею!</h2>
         <div className="contact__inner">

@@ -2,7 +2,7 @@ import "../styles/Advantages.scss";
 
 function Advantages() {
   return (
-    <section className="advantages">
+    <section className="advantages section__mb">
       <div className="container">
         <h2></h2>
         <div className="advantages__inner">

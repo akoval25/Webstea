@@ -2,7 +2,7 @@ import "../styles/Solution.scss";
 
 function Solution() {
   return (
-    <section className="solution">
+    <section className="solution section__mb">
       <div className="container">
         <h2 className="text-center">Які задачі вирішить сайт?</h2>
         <div className="solution__inner">
