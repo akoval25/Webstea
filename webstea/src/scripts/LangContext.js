@@ -3,7 +3,10 @@ import React, { createContext, useContext, useState } from 'react';
 const LangContext = createContext();
 
 export const LangProvider = ({ children }) => {
-  const [currentLang, setCurrentLang] = useState('ua');
+//   const [currentLang, setCurrentLang] = useState('ua');
+const userBrowserLanguage = navigator.language || navigator.userLanguage;
+const defaultLanguage = userBrowserLanguage.startsWith('ua') ? 'ua' : 'en';
+const [currentLang, setCurrentLang] = useState(defaultLanguage);
 
   const setLang = (lang) => {
     setCurrentLang(lang);
