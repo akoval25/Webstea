@@ -22,6 +22,14 @@ function Blog() {
               }}
               modules={[Scrollbar]}
               className="blog__slider"
+              breakpoints={{
+                769: {
+                  slidesPerView: 2,
+                },
+                320: {
+                  slidesPerView: 1,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="blog__slide">

@@ -4,14 +4,14 @@ function Advantages() {
   return (
     <section className="advantages section__mb">
       <div className="container">
-        <h2></h2>
+        <h2>Переваги співпраці з нами</h2>
         <div className="advantages__inner">
           <div className="advantages__item">
             <span className="advantages__item-num">01</span>
             <h3>Досвід</h3>
             <p>
               Ми класні, у нас багато досвіду, ми класні, у нас багато досвіду,
-              ми класні,.
+              ми класні.
             </p>
           </div>
           <div className="advantages__item">

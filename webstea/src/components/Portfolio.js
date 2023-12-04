@@ -20,6 +20,14 @@ function Portfolio() {
               }}
               modules={[Pagination]}
               className="portfolio__slider"
+              breakpoints={{
+                901: {
+                  slidesPerView: 2,
+                },
+                320: {
+                  slidesPerView: 1,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="portfolio__slide">

@@ -8,6 +8,7 @@
   background-image: url(../images/info-img.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
 }
 .info__inner {
   width: 100%;
@@ -34,4 +35,41 @@
 }
 .orange {
   color: $orange;
+}
+@media (max-width: 768px) {
+  .info {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/info-img--mob.png);
+  }
+  .info__inner {
+    background: linear-gradient(
+      0deg,
+      #202020 43.58%,
+      rgba(32, 32, 32, 0) 98.11%
+    );
+  }
+  .info__text {
+    max-width: 600px;
+    padding: 470px 25px 20px 18px;
+  }
+  .info__text h3 {
+    font-size: 20px;
+    line-height: 38px;
+    &:first-child {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .info__text h3 {
+    font-size: 16px;
+    line-height: 30px;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }

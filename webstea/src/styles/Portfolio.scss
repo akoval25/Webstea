@@ -1,7 +1,6 @@
 @import "Variables";
 
 .portfolio {
-  margin-bottom: 150px;
 }
 .portfolio__inner {
 }
@@ -63,4 +62,47 @@
 }
 .portfolio__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: $orange;
+}
+
+@media (max-width: 900px) {
+  .portfolio__slider {
+    margin-top: 40px;
+    padding-bottom: 60px;
+  }
+  .portfolio__slide {
+    margin: 0 auto;
+    background-size: contain;
+  }
+  .portfolio__slide-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .portfolio__slide-content p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .portfolio__slide-content .btn {
+    padding: 7px 60px 6px 20px;
+  }
+  .portfolio__slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio__slide {
+    padding: 10px;
+  }
+  .portfolio__slide-content {
+    padding: 10px;
+  }
+  .portfolio__slide-content p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 }

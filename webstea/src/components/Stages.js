@@ -124,13 +124,13 @@ function Stages() {
               </SwiperSlide>
             </Swiper>
           </>
-          <div className="pagination__bottom">
+          {/* <div className="pagination__bottom">
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

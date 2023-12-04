@@ -22,6 +22,7 @@
   font-weight: 400;
   cursor: pointer;
   position: relative;
+  padding-right: 90px;
 }
 
 .accordion__item-title::after {
@@ -32,6 +33,7 @@
   transform: translateY(-50%);
   height: 24px;
   transition: all 0.3s;
+  aspect-ratio: 46/24;
 }
 
 .accordion__item-content {
@@ -61,4 +63,40 @@
   transition: all 0.3s;
   filter: invert(35%) sepia(47%) saturate(2922%) hue-rotate(188deg)
     brightness(95%) contrast(107%);
+}
+
+@media (max-width: 768px) {
+  .faq h2 {
+    margin-bottom: 60px;
+  }
+  .accordion__item {
+    padding: 16px 20px;
+  }
+  .accordion__item-title {
+    font-size: 20px;
+    padding-right: 70px;
+  }
+  .accordion__item-title::after {
+    content: url(../images/arrow-down-tablet.svg);
+    right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .faq h2 {
+    margin-bottom: 40px;
+  }
+  .accordion__inner {
+    gap: 20px;
+  }
+  .accordion__item {
+    padding: 16px 20px;
+  }
+  .accordion__item-title {
+    font-size: 16px;
+    padding-right: 60px;
+  }
+  .accordion__item-title::after {
+    content: url(../images/arrow-down-mob.svg);
+    right: 0px;
+  }
 }
