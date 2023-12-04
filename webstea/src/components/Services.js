@@ -6,7 +6,7 @@ import servicesIcon4 from "../images/services__bottom-img-4.svg";
 
 function Services() {
   return (
-    <section className="services section__mb">
+    <section id="services" className="services section__mb">
       <div className="container">
         <h2>Основні послуги</h2>
         <div className="services__inner">

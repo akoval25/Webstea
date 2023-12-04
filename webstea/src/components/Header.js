@@ -2,8 +2,7 @@ import logo from "../images/logo.svg";
 import "../styles/Header.css";
 import "../styles/Header.scss";
 import { useRef } from "react";
-import LanguageSelector from  "../scripts/currentLang.js";
-
+import LanguageSelector from "../scripts/currentLang.js";
 
 function Header() {
   const menuBtnRef = useRef(null);
@@ -31,32 +30,40 @@ function Header() {
             <nav className="menu" ref={menuRef}>
               <ul className="menu__list">
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a href="#about" className="menu__link" onClick={closeMenu}>
                     Про нас
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a href="#contact" className="menu__link" onClick={closeMenu}>
                     Контакти
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a
+                    href="#services"
+                    className="menu__link"
+                    onClick={closeMenu}
+                  >
                     Послуги
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a
+                    href="#portfolio"
+                    className="menu__link"
+                    onClick={closeMenu}
+                  >
                     Портфоліо
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a href="#blog" className="menu__link" onClick={closeMenu}>
                     Блог
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#" className="menu__link" onClick={closeMenu}>
+                  <a href="#faq" className="menu__link" onClick={closeMenu}>
                     FAQ
                   </a>
                 </li>
@@ -80,6 +87,3 @@ function Header() {
 }
 
 export default Header;
-
-
-

@@ -9,7 +9,7 @@ import { Scrollbar } from "swiper/modules";
 
 function Blog() {
   return (
-    <section className="blog section__mb">
+    <section id="blog" className="blog section__mb">
       <div className="container">
         <h2 className="text-right">Блог</h2>
         <div className="blog__inner">

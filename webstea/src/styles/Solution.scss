@@ -1,7 +1,6 @@
 @import "Variables";
 
 .solution {
-  margin-bottom: 150px;
 }
 
 .solution h2 {
@@ -63,9 +62,4 @@
 .solution__item:nth-child(even) h3 {
   text-align: right;
   margin-left: auto;
-}
-
-.solution__item p {
-  font-size: 16px;
-  font-weight: 400;
 }

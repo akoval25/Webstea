@@ -377,6 +377,11 @@ $blue: #004f94;
 $orange: #ea6200;
 $orange-dark: #5c2700;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

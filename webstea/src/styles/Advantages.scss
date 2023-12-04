@@ -9,10 +9,9 @@
 }
 .advantages__inner {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 80px;
+  justify-content: space-around;
+  gap: 40px;
 }
 .advantages__item {
   max-width: 210px;

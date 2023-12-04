@@ -44,7 +44,7 @@ function FAQ() {
   ];
 
   return (
-    <section className="faq section__mb">
+    <section id="faq" className="faq section__mb">
       <div className="container">
         <h2 className="text-right">Часті запитання</h2>
         <div className="faq__inner">
