@@ -2,26 +2,30 @@ import "../styles/Contact.scss";
 
 function Contact() {
   return (
-    <section className="contact">
+    <section id="contact" className="contact section__mb">
       <div className="container">
         <h2>Давайте обговоримо вашу ідею!</h2>
         <div className="contact__inner">
           <form className="form">
             <div className="form__row">
-              <input
-                id="name"
-                className="form__input"
-                type="text"
-                placeholder="Ім’я"
-                require
-              ></input>
-              <input
-                id="tel"
-                className="form__input"
-                type="tel"
-                placeholder="Телефон"
-                require
-              ></input>
+              <div className="input__inner">
+                <input
+                  id="name"
+                  className="form__input"
+                  type="text"
+                  placeholder="Ім’я"
+                  require
+                ></input>
+              </div>
+              <div className="input__inner">
+                <input
+                  id="tel"
+                  className="form__input"
+                  type="tel"
+                  placeholder="Телефон"
+                  require
+                ></input>
+              </div>
             </div>
             <div className="form__row">
               <div className="input__inner">

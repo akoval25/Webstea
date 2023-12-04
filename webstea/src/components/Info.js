@@ -2,7 +2,7 @@ import "../styles/Info.scss";
 
 function Info() {
   return (
-    <section className="info">
+    <section className="info section__mb">
       <div className="info__inner">
         <div className="container">
           <div className="info__text">

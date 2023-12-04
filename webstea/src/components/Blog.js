@@ -9,7 +9,7 @@ import { Scrollbar } from "swiper/modules";
 
 function Blog() {
   return (
-    <section className="blog">
+    <section id="blog" className="blog section__mb">
       <div className="container">
         <h2 className="text-right">Блог</h2>
         <div className="blog__inner">
@@ -22,6 +22,14 @@ function Blog() {
               }}
               modules={[Scrollbar]}
               className="blog__slider"
+              breakpoints={{
+                769: {
+                  slidesPerView: 2,
+                },
+                320: {
+                  slidesPerView: 1,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="blog__slide">

@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 
 function Portfolio() {
   return (
-    <section className="portfolio">
+    <section id="portfolio" className="portfolio section__mb">
       <div className="container">
         <h2>Наші проєкти</h2>
         <div className="portfolio__inner">
@@ -20,6 +20,14 @@ function Portfolio() {
               }}
               modules={[Pagination]}
               className="portfolio__slider"
+              breakpoints={{
+                901: {
+                  slidesPerView: 2,
+                },
+                320: {
+                  slidesPerView: 1,
+                },
+              }}
             >
               <SwiperSlide>
                 <div className="portfolio__slide">

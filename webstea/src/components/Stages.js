@@ -27,7 +27,7 @@ function Stages() {
   };
 
   return (
-    <section className="stages">
+    <section className="stages section__mb">
       <div className="container">
         <h2>Етапи створення вашого сайту</h2>
         <div className="stages__inner">
@@ -124,13 +124,13 @@ function Stages() {
               </SwiperSlide>
             </Swiper>
           </>
-          <div className="pagination__bottom">
+          {/* <div className="pagination__bottom">
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
             <span className="pagination__bottom-item"></span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

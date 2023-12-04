@@ -377,6 +377,11 @@ $blue: #004f94;
 $orange: #ea6200;
 $orange-dark: #5c2700;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -399,11 +404,13 @@ a {
 
 h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: clamp(20px, 4vw, 55px);
+  font-size: clamp(20px, 6vw, 55px);
+  text-wrap: balance;
 }
 
 p {
   font-size: 16px;
+  text-wrap: balance;
 }
 
 .text-right {
@@ -441,9 +448,19 @@ p {
   transform: translateY(-50%);
 }
 
+.section__mb {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 768px) {
   .btn {
     font-size: 16px;
+  }
+  .section__mb {
+    margin-bottom: 100px;
+  }
+  p {
+    font-size: 14px;
   }
 }
 
@@ -451,6 +468,9 @@ p {
   .btn {
     font-size: 14px;
     line-height: 28px;
-    padding: 9px 80px 8px 20px;
+    padding: 7px 80px 6px 20px;
+  }
+  .section__mb {
+    margin-bottom: 55px;
   }
 }

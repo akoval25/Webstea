@@ -1,7 +1,6 @@
 @import "Variables";
 
 .technologies {
-  margin-bottom: 150px;
 }
 
 .technologies h2 {
@@ -23,17 +22,32 @@
 }
 
 .--code {
-  gap: 90px;
+  gap: 80px;
 }
 .--cms {
-  gap: 67px;
+  gap: 50px;
 }
 .--other {
-  gap: 88px;
+  gap: 70px;
 }
 .technologies__group img {
   transition: all 0.3s;
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .technologies__group img {
+    max-width: 12%;
+  }
+  .--code {
+    gap: 30px;
+  }
+  .--cms {
+    gap: 30px;
+  }
+  .--other {
+    gap: 40px;
   }
 }

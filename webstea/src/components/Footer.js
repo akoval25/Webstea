@@ -16,27 +16,27 @@ function Footer() {
           </a>
           <ul className="footer__list">
             <li className="footer__item">
-              <a href="#" className="footer__link">
+              <a href="#about" className="footer__link">
                 Про нас
               </a>
             </li>
             <li className="footer__item">
-              <a href="#" className="footer__link">
+              <a href="#services" className="footer__link">
                 Послуги
               </a>
             </li>
             <li className="footer__item">
-              <a href="#" className="footer__link">
+              <a href="#portfolio" className="footer__link">
                 Портфоліо
               </a>
             </li>
             <li className="footer__item">
-              <a href="#" className="footer__link">
+              <a href="#blog" className="footer__link">
                 Блог
               </a>
             </li>
             <li className="footer__item">
-              <a href="#" className="footer__link">
+              <a href="#faq" className="footer__link">
                 FAQ
               </a>
             </li>
@@ -46,10 +46,10 @@ function Footer() {
               <p>E-mail:</p>
               <a href="#">webstea@webstea.com</a>
             </div>
-            <div className="footer__contact-item">
+            {/* <div className="footer__contact-item">
               <p>Телефон:</p>
               <a href="#">+3809333333333</a>
-            </div>
+            </div> */}
             <div className="footer__contact-social">
               <a href="#">
                 <img src={Telegram} alt="Telegram"></img>
@@ -63,9 +63,9 @@ function Footer() {
               <a href="#">
                 <img src={Facebook} alt="Facebook"></img>
               </a>
-              <a href="#">
+              {/* <a href="#">
                 <img src={Behance} alt="Behance"></img>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

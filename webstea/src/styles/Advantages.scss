@@ -1,12 +1,17 @@
 @import "Variables";
 
 .advantages {
-  margin-bottom: 150px;
+}
+
+.advantages h2 {
+  max-width: 60%;
+  margin-bottom: 60px;
 }
 .advantages__inner {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
 }
 .advantages__item {
   max-width: 210px;
@@ -29,4 +34,17 @@
 .advantages__item p {
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .advantages h2 {
+    max-width: 393px;
+    margin-bottom: 60px;
+  }
+  .advantages__item-num {
+    margin-bottom: 5px;
+  }
+  .advantages__item {
+    padding-top: 10px;
+  }
 }

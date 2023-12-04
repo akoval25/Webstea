@@ -3,26 +3,24 @@
 /* SERVICES */
 
 .services {
-  margin-bottom: 150px;
 }
 
 .services h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: 55px;
   margin-bottom: 93px;
 }
 .services__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 47px;
+  gap: 40px;
   margin-bottom: 120px;
 }
 .services__item {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 420px;
+  max-width: max(min(calc((100% - 94px) / 3), 420px), 290px);
   padding: 20px;
   box-shadow: inset 0 0 0 2px #272525;
   background: linear-gradient(90deg, #282626 60%, rgba(40, 38, 38, 0) 95%);
@@ -43,7 +41,14 @@
   height: 0;
   bottom: 0;
   right: 0;
-  transition: all 0.3s;
+  transition: border-color 1s, width 0.25s, height 0.25s, opacity 1s;
+  opacity: 0;
+}
+.services__item::before {
+  transition-delay: 0.25s, 0.25s, 0s;
+}
+.services__item::after {
+  transition-delay: 0.25s, 0s, 0.25s;
 }
 .services__item::before {
   border-bottom-width: 2px;
@@ -57,9 +62,10 @@
 .services__item:hover::before,
 .services__item:hover::after {
   border-color: $orange;
-  transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s, opacity 0s;
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
 .services__item:hover::before {
   transition-delay: 0s, 0s, 0.25s;
@@ -75,16 +81,18 @@
   font-weight: 600;
 }
 .services__item p {
-  font-size: 16px;
   margin-bottom: 33px;
+  margin-top: auto;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 .services__link {
   display: inline-block;
   font-size: 18px;
   font-family: "Unbounded", sans-serif;
-  margin-top: auto;
   margin-left: auto;
-  align-items: end;
   padding-right: 50px;
   position: relative;
   transition: all 0.3s;
@@ -131,6 +139,40 @@
   margin-bottom: 40px;
 }
 
-.services__bottom-item p {
-  font-size: 16px;
+@media (max-width: 768px) {
+  .services h2 {
+    margin-bottom: 55px;
+  }
+  .services__inner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 31px;
+    margin-bottom: 55px;
+  }
+  .services__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: max(min(calc((100% - 31px) / 2), 315px), 290px);
+    padding: 10px 10px 20px;
+  }
+  .services__bottom-item h3 {
+    margin-bottom: 24px;
+  }
+  .services__item h3,
+  .services__bottom-item h3 {
+    font-size: 18px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 425px) {
+  .services h2 {
+    margin-bottom: 46px;
+  }
+  .services__item {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
 }
