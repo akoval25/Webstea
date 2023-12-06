@@ -10,13 +10,15 @@ function Hero() {
     <section className="hero section__mb">
       <div className="container">
         <div className="hero__inner">
-          <h1 className="lng-hero-title">{getLangText("hero-title")}</h1>
-          <p className="lng-hero-description">
-            {getLangText("hero-description")}
-          </p>
-          <a href="#" className="btn lng-hero-link">
-            {getLangText("hero-link")}
-          </a>
+          <div className="hero__content">
+            <h1 className="lng-hero-title">{getLangText("hero-title")}</h1>
+            <p className="lng-hero-description">
+              {getLangText("hero-description")}
+            </p>
+            <a href="#" className="btn lng-hero-link">
+              {getLangText("hero-link")}
+            </a>
+          </div>
         </div>
       </div>
     </section>
