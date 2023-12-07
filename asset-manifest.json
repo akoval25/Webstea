@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Webstea/static/css/main.1ed09478.css",
-    "main.js": "/Webstea/static/js/main.2fb5b660.js",
+    "main.js": "/Webstea/static/js/main.988945c1.js",
     "static/js/787.a881cd91.chunk.js": "/Webstea/static/js/787.a881cd91.chunk.js",
     "static/media/info-img.png": "/Webstea/static/media/info-img.a4b2bf2b2f384867d4e2.png",
     "static/media/stages-slide-bg-2.png": "/Webstea/static/media/stages-slide-bg-2.5b6afed570accfa8e4c6.png",
@@ -30,11 +30,11 @@
     "static/media/arrow-down-mob.svg": "/Webstea/static/media/arrow-down-mob.2b58bffa2cce7888f0ce.svg",
     "static/media/arrow-down.svg": "/Webstea/static/media/arrow-down.3b6efbc091343ce96df3.svg",
     "main.1ed09478.css.map": "/Webstea/static/css/main.1ed09478.css.map",
-    "main.2fb5b660.js.map": "/Webstea/static/js/main.2fb5b660.js.map",
+    "main.988945c1.js.map": "/Webstea/static/js/main.988945c1.js.map",
     "787.a881cd91.chunk.js.map": "/Webstea/static/js/787.a881cd91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ed09478.css",
-    "static/js/main.2fb5b660.js"
+    "static/js/main.988945c1.js"
   ]
 }
