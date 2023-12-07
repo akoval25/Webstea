@@ -3,10 +3,12 @@ import "../styles/Header.css";
 import "../styles/Header.scss";
 import { useRef } from "react";
 import LanguageSelector from "../scripts/currentLang.js";
+import { useLang } from "../scripts/LangContext.js";
 
 function Header() {
   const menuBtnRef = useRef(null);
   const menuRef = useRef(null);
+  const { getLangText } = useLang();
 
   const toggleMenu = () => {
     menuBtnRef.current.classList.toggle("menu__btn--active");
@@ -30,41 +32,41 @@ function Header() {
             <nav className="menu" ref={menuRef}>
               <ul className="menu__list">
                 <li className="menu__item">
-                  <a href="#about" className="menu__link" onClick={closeMenu}>
-                    Про нас
+                  <a href="#about" className="menu__link lng-about" onClick={closeMenu}>
+                  {getLangText("about")}
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#contact" className="menu__link" onClick={closeMenu}>
-                    Контакти
+                  <a href="#contact" className="menu__link lng-contact" onClick={closeMenu}>
+                  {getLangText("contact")}
                   </a>
                 </li>
                 <li className="menu__item">
                   <a
                     href="#services"
-                    className="menu__link"
+                    className="menu__link lng-services"
                     onClick={closeMenu}
                   >
-                    Послуги
+                    {getLangText("services")}
                   </a>
                 </li>
                 <li className="menu__item">
                   <a
                     href="#portfolio"
-                    className="menu__link"
+                    className="menu__link lng-portfolio"
                     onClick={closeMenu}
                   >
-                    Портфоліо
+                    {getLangText("portfolio")}
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#blog" className="menu__link" onClick={closeMenu}>
-                    Блог
+                  <a href="#blog" className="menu__link lng-blog" onClick={closeMenu}>
+                  {getLangText("blog")}
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a href="#faq" className="menu__link" onClick={closeMenu}>
-                    FAQ
+                  <a href="#faq" className="menu__link lng-faq" onClick={closeMenu}>
+                  {getLangText("faq")}
                   </a>
                 </li>
               </ul>

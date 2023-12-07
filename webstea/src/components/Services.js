@@ -3,77 +3,67 @@ import servicesIcon1 from "../images/services__bottom-img-1.svg";
 import servicesIcon2 from "../images/services__bottom-img-2.svg";
 import servicesIcon3 from "../images/services__bottom-img-3.svg";
 import servicesIcon4 from "../images/services__bottom-img-4.svg";
+import { useLang } from "../scripts/LangContext.js";
 
 function Services() {
+  const { getLangText } = useLang();
   return (
     <section id="services" className="services section__mb">
       <div className="container">
-        <h2>Основні послуги</h2>
+        <h2 className="lng-services-title">{getLangText("services-title")}</h2>
         <div className="services__inner">
           <a href="#" className="services__item">
-            <h3>Landing page</h3>
-            <p>
-              Сайт з унікальним дизайном з 1 довгої сторінки.Завдання лендинга
-              презентація нового товару або послуги з метою лідогенераціі і
-              збільшення продажів
+            <h3 className="lng-services-landing-title">{getLangText("services-landing-title")}</h3>
+            <p className="lng-services-landing-description">
+            {getLangText("services-landing-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
           <a href="#" className="services__item">
-            <h3>Сайт візитка</h3>
-            <p>
-              Сайт з 1-3 сторінок з персоналізованим дизайном.Коротко доносить
-              основну інформацію про компанію або персони, містить сторінку
-              контакти і форму зворотного зв’язку.
+            <h3 className="lng-services-card-title">{getLangText("services-card-title")}</h3>
+            <p className="lng-services-card-description">
+            {getLangText("services-card-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
           <a href="#" className="services__item">
-            <h3>Інтернет магазин</h3>
-            <p>
-              Розробка магазину для продажу товарів через Інтернет. Інтернет
-              магазин дає можливість створення категорій і карток товарів,
-              додавання методів оплати, зручну корзину, експорт та імпорт даних.
+            <h3 className="lng-services-shop-title">{getLangText("services-shop-title")}</h3>
+            <p className="lng-services-shop-description">
+            {getLangText("services-shop-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
           <a href="#" className="services__item">
-            <h3>Корпоративний сайт</h3>
-            <p>
-              Створення відкритого або закритого типу веб-ресурсу Вашої
-              компанії, з можливістю публікації новин та інших матеріалів, цін,
-              презентацій та іншої корпоративної інформації.
+            <h3 className="lng-services-corporate-title">{getLangText("services-corporate-title")}</h3>
+            <p className="lng-services-corporate-description">
+            {getLangText("services-corporate-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
           <a href="#" className="services__item">
-            <h3>Сайт каталог</h3>
-            <p>
-              Містить каталог товарів з можливістю фільтрації, але без цін і
-              кошика, підходить для продуктів вартість яких формується
-              індивідуально.
+            <h3 className="lng-services-catalog-title">{getLangText("services-catalog-title")}</h3>
+            <p className="lng-services-catalog-description">
+            {getLangText("services-catalog-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
           <a href="#" className="services__item">
-            <h3>Індивидуальний проект</h3>
-            <p>
-              Розробка унікального сайту будь-якої складності, складемо
-              професійний проект Вашого веб-ресурсу, виконаємо дизайн, розробку
-              і верстку.
+            <h3 className="lng-services-project-title">{getLangText("services-project-title")}</h3>
+            <p className="lng-services-project-description">
+            {getLangText("services-project-description")}
             </p>
-            <a href="#" className="services__link">
-              Дізнатися більше
+            <a href="#" className="services__link lng-services-landing-btn">
+            {getLangText("services-landing-btn")}
             </a>
           </a>
         </div>
