@@ -18,12 +18,13 @@ import Solution from "./components/Solution.js";
 import Footer from "./components/Footer.js";
 import reportWebVitals from "./reportWebVitals";
 import { LangProvider } from './scripts/LangContext.js';
-import LanguageSelector from './scripts/currentLang.js';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+
     <LangProvider>
     <div>
     <Header />
@@ -43,6 +44,7 @@ root.render(
       <Footer />
     </div>
     </LangProvider>
+
   </React.StrictMode>
 );
 
