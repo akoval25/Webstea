@@ -55,7 +55,8 @@ function LanguageSelector() {
 
   useEffect(() => {
     const pathSegments = window.location.pathname.split('/');
-    const langFromUrl = pathSegments[1];
+    // const langFromUrl = pathSegments[1];
+    const langFromUrl = pathSegments[2];
     if (initialLoad && langFromUrl && (langFromUrl === 'ua' || langFromUrl === 'en')) {
       setLang(langFromUrl);
     } else if (initialLoad) {
@@ -65,6 +66,7 @@ function LanguageSelector() {
       setLang(defaultLanguage);
     }
   }, [initialLoad, setLang]);
+
 
   const baseUrl = window.location.origin;
 
