@@ -5,6 +5,8 @@ import { useRef } from "react";
 import LanguageSelector from "../scripts/currentLang.js";
 import { useLang } from "../scripts/LangContext.js";
 
+
+
 function Header() {
   const menuBtnRef = useRef(null);
   const menuRef = useRef(null);
