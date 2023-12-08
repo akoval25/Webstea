@@ -48,3 +48,16 @@
     padding-top: 10px;
   }
 }
+
+@media (max-width: 430px) {
+  .advantages__inner {
+    gap: 60px;
+  }
+  .advantages__item {
+    max-width: 100%;
+    padding-top: 5px;
+  }
+  .advantages__item-num {
+    margin-bottom: -20px;
+  }
+}
