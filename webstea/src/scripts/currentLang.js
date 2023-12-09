@@ -38,7 +38,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLang } from './LangContext';
-import { generateUrl } from './url';
+import { generateUrl } from './url.js';
+
 
 function LanguageSelector() {
   const { currentLang, setLang } = useLang();
@@ -92,7 +93,8 @@ function LanguageSelector() {
           </a>
         </li>
       </ul>
-    </div>
+    </div> 
+
   );
 }
 
