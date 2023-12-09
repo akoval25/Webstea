@@ -17,8 +17,8 @@ root.render(
     <App/>
     <Router>
       <Routes>
-        <Route path="/Webstea/en" element={<App />} />
-        <Route path="/Webstea/ua" element={<App />} />
+        <Route path="/en" element={<App />} />
+        <Route path="/ua" element={<App />} />
       </Routes>
     </Router>
   </LangProvider>
