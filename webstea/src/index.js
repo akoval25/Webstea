@@ -15,12 +15,12 @@ root.render(
 <React.StrictMode>
   <LangProvider>
     <App/>
-    <Router>
+    {/* <Router>
       <Routes>
-        <Route path="/en" element={<App />} />
-        <Route path="/ua" element={<App />} />
+        <Route path="/Webstea/en" element={<App />} />
+        <Route path="/Webstea/ua" element={<App />} />
       </Routes>
-    </Router>
+    </Router> */}
   </LangProvider>
   </React.StrictMode>
   // <React.StrictMode>

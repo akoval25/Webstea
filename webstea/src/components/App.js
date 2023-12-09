@@ -16,6 +16,7 @@ import Blog from "../components/Blog.js";
 import FAQ from "../components/FAQ.js";
 import Solution from "../components/Solution.js";
 import Footer from "../components/Footer.js";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 
@@ -23,6 +24,9 @@ import Footer from "../components/Footer.js";
 function App() {
     return (
     <React.StrictMode>
+
+
+
         <Header />
         <Hero />
         <About />
@@ -38,6 +42,12 @@ function App() {
         <Solution />
         <Contact />
         <Footer />
+        <Router>
+      <Routes>
+        <Route path="/Webstea/en" element={<Header />} />
+        <Route path="/Webstea/ua" element={<Header />} />
+      </Routes>
+      </Router>
     </React.StrictMode>
       );
     }
