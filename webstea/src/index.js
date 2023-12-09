@@ -16,40 +16,52 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
+    <Route path="/Webstea" element={<App />}>
       <Route path="/Webstea/en" element={<App />} />
       <Route path="/Webstea/ua" element={<App />} />
     </Route>
   )
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-<React.StrictMode>
-  <LangProvider>
-  
-    <App/>
 
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <LangProvider>
     <RouterProvider router={router} />
-    {/* <Router>
-      <Routes>
-        <Route path="/Webstea/en" element={<App />} />
-        <Route path="/Webstea/ua" element={<App />} />
-      </Routes>
-      </Router>   */}
-  </LangProvider>
+    </LangProvider>
   </React.StrictMode>
-  // <React.StrictMode>
-
-  //   <LangProvider>
-  //   <div>
-  //     <App/>
-
-  //   </div>
-  //   </LangProvider>
-
-  // </React.StrictMode>
 );
 
-reportWebVitals();
+
+
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+// <React.StrictMode>
+//   <LangProvider>
+  
+//     <App/>
+
+//     <RouterProvider router={router} />
+//     {/* <Router>
+//       <Routes>
+//         <Route path="/Webstea/en" element={<App />} />
+//         <Route path="/Webstea/ua" element={<App />} />
+//       </Routes>
+//       </Router>   */}
+//   </LangProvider>
+//   </React.StrictMode>
+//   // <React.StrictMode>
+
+//   //   <LangProvider>
+//   //   <div>
+//   //     <App/>
+
+//   //   </div>
+//   //   </LangProvider>
+
+//   // </React.StrictMode>
+// );
+
+// reportWebVitals();
 
