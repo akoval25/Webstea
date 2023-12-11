@@ -57,7 +57,7 @@ function Header() {
                     spy={true}
                     smooth={true}
                     offset={-70} 
-                    duration={500}
+                    duration={200}
                     className="menu__link lng-services"
                     onClick={closeMenu}
                   >
