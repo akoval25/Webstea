@@ -34,18 +34,6 @@ const router = createHashRouter([
     element: <App />,
   },
   {
-    path: "/Webstea",
-    element: <App />,
-  }, 
-  {
-    path: "/Webstea/en",
-    element: <App />,
-  },
-  {
-    path: "/Webstea/ua",
-    element: <App />,
-  },
-  {
     path: "/",
     element: <App />,
   }
