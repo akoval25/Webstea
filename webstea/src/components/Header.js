@@ -4,6 +4,7 @@ import "../styles/Header.scss";
 import { useRef } from "react";
 import LanguageSelector from "../scripts/currentLang.js";
 import { useLang } from "../scripts/LangContext.js";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
 
@@ -44,13 +45,24 @@ function Header() {
                   </a>
                 </li>
                 <li className="menu__item">
-                  <a
+                  {/* <a
                     href="#services"
                     className="menu__link lng-services"
                     onClick={closeMenu}
                   >
                     {getLangText("services")}
-                  </a>
+                  </a> */}
+                 <ScrollLink
+                    to="services" 
+                    spy={true}
+                    smooth={true}
+                    offset={-70} 
+                    duration={500}
+                    className="menu__link lng-services"
+                    onClick={closeMenu}
+                  >
+                  {getLangText("services")}
+                </ScrollLink>
                 </li>
                 <li className="menu__item">
                   <a
