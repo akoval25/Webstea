@@ -1,5 +1,5 @@
 export const generateUrl = (currentLang, basePath) => {
-    let url = `${basePath}/Webstea`;
+    let url = `${basePath}`;
   
     if (currentLang === 'ua') {
       url += '/ua';
