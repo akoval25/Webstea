@@ -9,3 +9,10 @@ export const generateUrl = (currentLang, basePath) => {
   
     return url;
   };
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentLang = window.location.pathname.split('/')[1].toLowerCase();
+    const htmlTag = document.querySelector('html');
+    htmlTag.setAttribute('lang', currentLang === 'en' || currentLang === 'ua' ? currentLang : 'ua');
+  });
+  

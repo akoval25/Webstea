@@ -2,34 +2,50 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/Stages.scss";
+import { useLang } from "../scripts/LangContext.js";
 
 import { Pagination } from "swiper/modules";
 
 function Stages() {
-  const stagesPaginationTop = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      const stagesPaginationTopText = [
-        "Аналіз",
-        "Прототип",
-        "Дизайн",
-        "Розробка",
-        "Запуск",
-      ];
-      return (
-        '<span class="' +
-        className +
-        '">' +
-        stagesPaginationTopText[index] +
-        "</span>"
-      );
-    },
-  };
+  const { getLangText } = useLang();
+    const currentLang = window.location.pathname.split('/')[1].toLowerCase();
+    const stagesPaginationTop = {
+      clickable: true,
+      renderBullet: function (index, className) {
+        const langArr = {
+          "ua": {
+            "st1": "Аналіз",
+            "st2": "Прототип",
+            "st3": "Дизайн",
+            "st4": "Розробка",
+            "st5": "Запуск",
+          },
+          "en": {
+            "st1": "Analysis",
+            "st2": "Prototype",
+            "st3": "Design",
+            "st4": "Development",
+            "st5": "Launching",
+          },
+        };
+        const validLang = currentLang === 'en' || currentLang === 'ua' ? currentLang : 'ua';
+        const text = langArr[validLang][`st${index + 1}`];
+  
+        return (
+          `<span class="${className}">
+            ${text}
+          </span>`
+        );
+      },
+    };
+  
+
+
 
   return (
     <section className="stages section__mb">
       <div className="container">
-        <h2>Етапи створення вашого сайту</h2>
+        <h2 className="lng-stages-title">{getLangText("stages-title")}</h2>
         <div className="stages__inner">
           <>
             <Swiper
@@ -41,14 +57,9 @@ function Stages() {
                 <div className="stages__slide">
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
-                      <h3>Аналіз</h3>
-                      <p>
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
+                      <h3 className="lng-st21">{getLangText("st21")}</h3>
+                      <p className="lng-st21-description">
+                      {getLangText("st21-description")}
                       </p>
                     </div>
                   </div>
@@ -58,14 +69,9 @@ function Stages() {
                 <div className="stages__slide">
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
-                      <h3>Прототип</h3>
-                      <p>
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
+                      <h3 className="lng-st22">{getLangText("st22")}</h3>
+                      <p className="lng-st22-description">
+                      {getLangText("st22-description")}
                       </p>
                     </div>
                   </div>
@@ -75,14 +81,9 @@ function Stages() {
                 <div className="stages__slide">
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
-                      <h3>Дизайн</h3>
-                      <p>
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
+                      <h3 className="lng-st23">{getLangText("st23")}</h3>
+                      <p className="lng-st23-description">
+                      {getLangText("st23-description")}
                       </p>
                     </div>
                   </div>
@@ -92,14 +93,9 @@ function Stages() {
                 <div className="stages__slide">
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
-                      <h3>Розробка</h3>
-                      <p>
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
+                      <h3 className="lng-st24">{getLangText("st24")}</h3>
+                      <p className="lng-st24-description">
+                      {getLangText("st24-description")}
                       </p>
                     </div>
                   </div>
@@ -109,14 +105,9 @@ function Stages() {
                 <div className="stages__slide">
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
-                      <h3>Запуск</h3>
-                      <p>
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
-                        Розробляємо оригінальний дизайн, що робить покупки
-                        онлайн зрозумілими і приємними, та який візуально
-                        відтворюватиме фірмовий стиль вашої компанії.
+                      <h3 className="lng-st25">{getLangText("st25")}</h3>
+                      <p className="lng-st25-description">
+                      {getLangText("st25-description")}
                       </p>
                     </div>
                   </div>

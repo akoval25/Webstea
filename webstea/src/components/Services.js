@@ -70,31 +70,28 @@ function Services() {
         <div className="services__bottom">
           <div className="services__bottom-item">
             <img src={servicesIcon1}></img>
-            <h3>Технічка підтримка</h3>
-            <p>
-              Впроваджуємо нові бажання, розвиваємо функціонал, оптимізуємо
-              роботу модулів і плагінів.
+            <h3 className="lng-services-support-title">{getLangText("services-support-title")}</h3>
+            <p className="lng-services-support-description">
+            {getLangText("services-support-description")}
             </p>
           </div>
           <div className="services__bottom-item">
             <img src={servicesIcon2}></img>
-            <h3>Доопрацювання сайту</h3>
-            <p>
-              Допомагаємо клієнтам бути попереду конкурентів. Оновлюємо дизайн,
-              додаємо нові "фішки".
+            <h3 className="lng-services-fix-title">{getLangText("services-fix-title")}</h3>
+            <p className="lng-services-fix-description">
+            {getLangText("services-fix-description")}
             </p>
           </div>
           <div className="services__bottom-item">
             <img src={servicesIcon3}></img>
-            <h3>Редизайн</h3>
-            <p>Підтримуємо та розвиваємо створені та існуючі проекти.</p>
+            <h3 className="lng-services-design-title">{getLangText("services-design-title")}</h3>
+            <p className="lng-services-design-description">{getLangText("services-design-description")}</p>
           </div>
           <div className="services__bottom-item">
             <img src={servicesIcon4}></img>
-            <h3>SEO-просування</h3>
-            <p>
-              Рекламні стратегії допоможуть підвщити відвідуваність сайту та
-              залучити більше клієнтів
+            <h3 className="lng-services-seo-title">{getLangText("services-seo-title")}</h3>
+            <p className="lng-services-seo-description">
+            {getLangText("services-seo-description")}
             </p>
           </div>
         </div>

@@ -1,4 +1,7 @@
- import React, { createContext, useContext, useState } from 'react';
+//  import React, { createContext, useContext, useState } from 'react';
+ import React, { createContext, useContext, useState, useEffect } from 'react';
+
+
 
  const LangContext = createContext();
 
@@ -44,6 +47,36 @@
       "services-catalog-description": "Містить каталог товарів з можливістю фільтрації, але без цін і кошика, підходить для продуктів вартість яких формується індивідуально.",
       "services-project-title": "Індивидуальний проект",
       "services-project-description": "Розробка унікального сайту будь-якої складності, складемо професійний проект Вашого веб-ресурсу, виконаємо дизайн, розробку і верстку.",
+      "services-support-title": "Технічка підтримка",
+      "services-support-description": "Впроваджуємо нові бажання, розвиваємо функціонал, оптимізуємо роботу модулів і плагінів.",
+      "services-fix-title": "Доопрацювання сайту",
+      "services-fix-description": "Допомагаємо клієнтам бути попереду конкурентів. Оновлюємо дизайн, додаємо нові 'фішки'.",
+      "services-design-title": "Редизайн",
+      "services-design-description": "Підтримуємо та розвиваємо створені та існуючі проекти.",
+      "services-seo-title": "SEO-просування",
+      "services-seo-description": "Рекламні стратегії допоможуть підвщити відвідуваність сайту та залучити більше клієнтів.",
+      "info-first": "Хороший сайт",
+      "info-second": "неможливо зробити за два дні.",
+      "info-third": "Розробка по-справжньому робочого сайту триває",
+      "info-fourth": "від 1 місяця",
+      "info-fifth": ", зате на виході ви отримаєте продукт, який",
+      "info-sixth": "принесе прибуток",
+      "st1": "Аналіз",
+      "st2": "Прототип",
+      "st3": "Дизайн",
+      "st4": "Розробка",
+      "st5": "Запуск",
+      "stages-title": "Етапи створення вашого сайту",
+      "st21": "Аналіз",
+      "st22": "Прототип",
+      "st23": "Дизайн",
+      "st24": "Розробка",
+      "st25": "Запуск",
+      "st21-description": "Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії. Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії.",
+      "st22-description": "Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії. Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії.",
+      "st23-description": "Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії. Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії.",
+      "st24-description": "Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії. Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії.",
+      "st25-description": "Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії. Розробляємо оригінальний дизайн, що робить покупки онлайн зрозумілими і приємними, та який візуально відтворюватиме фірмовий стиль вашої компанії.",
       "": "",
     },
     "en": {
@@ -77,6 +110,36 @@
       "services-catalog-description": "Contains a product catalog with the possibility of filtering, but without prices and a basket, suitable for products whose cost is formed individually.",
       "services-project-title": "Individual project",
       "services-project-description": "Development of a unique website of any complexity, we will create a professional project of your web resource, perform design, development and layout.",
+      "services-support-title": "Technical support",
+      "services-support-description": "We implement new wishes, develop functionality, optimize the work of modules and plugins.",
+      "services-fix-title": "Finalization of the site",
+      "services-fix-description": "We help clients stay ahead of competitors. We update the design, add new 'chips'.",
+      "services-design-title": "Redesign",
+      "services-design-description": "We support and develop created and existing projects.",
+      "services-seo-title": "SEO promotion",
+      "services-seo-description": "Advertising strategies will help increase traffic to the site and attract more customers.",
+      "info-first": "Good site",
+      "info-second": "impossible to do in two days.",
+      "info-third": "The development of a real working site is ongoing",
+      "info-fourth": "from 1 month",
+      "info-fifth": ", but at the output you will get a product which",
+      "info-sixth": "will bring profit",
+      "st1": "Analysis",
+      "st2": "Prototype",
+      "st3": "Design",
+      "st4": "Development",
+      "st5": "Launching",
+      "stages-title": "Stages of creating your site",
+      "st21": "Analysis",
+      "st22": "Prototype",
+      "st23": "Design",
+      "st24": "Development",
+      "st25": "Launching",
+      "st21-description": "We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company. We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company.",
+      "st22-description": "We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company. We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company.",
+      "st23-description": "We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company. We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company.",
+      "st24-description": "We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company. We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company.",
+      "st25-description": "We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company. We develop an original design that makes online shopping clear and pleasant, and that visually reproduces the corporate style of your company.",
       "": "",
     },
   };
@@ -88,11 +151,25 @@
     return '';
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, [currentLang]);
+
   return (
-    <LangContext.Provider value={{ currentLang, setLang, getLangText }}>
-      {children}
+    <LangContext.Provider value={{ currentLang, setLang, getLangText, loading }}>
+      <div style={{ visibility: loading ? 'hidden' : 'visible' }}>
+        {children}
+      </div>
     </LangContext.Provider>
   );
+
+  // return (
+  //   <LangContext.Provider value={{ currentLang, setLang, getLangText }}>
+  //     {children}
+  //   </LangContext.Provider>
+  // );
 };
 
 export const useLang = () => {
