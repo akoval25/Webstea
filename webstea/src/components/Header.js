@@ -35,14 +35,36 @@ function Header() {
             <nav className="menu" ref={menuRef}>
               <ul className="menu__list">
                 <li className="menu__item">
-                  <a href="#about" className="menu__link lng-about" onClick={closeMenu}>
+                <ScrollLink
+                    to="about" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="menu__link lng-about"
+                    onClick={closeMenu}
+                  >
                   {getLangText("about")}
-                  </a>
+                </ScrollLink>
+                  {/* <a href="#about" className="menu__link lng-about" onClick={closeMenu}>
+                  {getLangText("about")}
+                  </a> */}
                 </li>
                 <li className="menu__item">
-                  <a href="#contact" className="menu__link lng-contact" onClick={closeMenu}>
+                <ScrollLink
+                    to="contact" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="menu__link lng-contact"
+                    onClick={closeMenu}
+                  >
                   {getLangText("contact")}
-                  </a>
+                </ScrollLink>
+                  {/* <a href="#contact" className="menu__link lng-contact" onClick={closeMenu}>
+                  {getLangText("contact")}
+                  </a> */}
                 </li>
                 <li className="menu__item">
                   {/* <a
@@ -56,7 +78,7 @@ function Header() {
                     to="services" 
                     spy={true}
                     smooth={true}
-                    offset={-70} 
+                    offset={-50} 
                     duration={200}
                     className="menu__link lng-services"
                     onClick={closeMenu}
@@ -65,23 +87,56 @@ function Header() {
                 </ScrollLink>
                 </li>
                 <li className="menu__item">
-                  <a
+                <ScrollLink
+                    to="portfolio" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="menu__link lng-portfolio"
+                    onClick={closeMenu}
+                  >
+                  {getLangText("portfolio")}
+                </ScrollLink>
+                  {/* <a
                     href="#portfolio"
                     className="menu__link lng-portfolio"
                     onClick={closeMenu}
                   >
                     {getLangText("portfolio")}
-                  </a>
+                  </a> */}
                 </li>
                 <li className="menu__item">
-                  <a href="#blog" className="menu__link lng-blog" onClick={closeMenu}>
+                <ScrollLink
+                    to="blog" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="menu__link lng-blog"
+                    onClick={closeMenu}
+                  >
                   {getLangText("blog")}
-                  </a>
+                </ScrollLink>
+                  {/* <a href="#blog" className="menu__link lng-blog" onClick={closeMenu}>
+                  {getLangText("blog")}
+                  </a> */}
                 </li>
                 <li className="menu__item">
-                  <a href="#faq" className="menu__link lng-faq" onClick={closeMenu}>
+                <ScrollLink
+                    to="faq" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="menu__link lng-faq"
+                    onClick={closeMenu}
+                  >
                   {getLangText("faq")}
-                  </a>
+                </ScrollLink>
+                  {/* <a href="#faq" className="menu__link lng-faq" onClick={closeMenu}>
+                  {getLangText("faq")}
+                  </a> */}
                 </li>
               </ul>
             </nav>
