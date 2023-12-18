@@ -6,8 +6,6 @@ import LanguageSelector from "../scripts/currentLang.js";
 import { useLang } from "../scripts/LangContext.js";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-
-
 function Header() {
   const menuBtnRef = useRef(null);
   const menuRef = useRef(null);
@@ -26,7 +24,7 @@ function Header() {
   };
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header header">
         <div className="container">
           <div className="header__top">
             <a href="#" className="logo__link">
@@ -35,33 +33,33 @@ function Header() {
             <nav className="menu" ref={menuRef}>
               <ul className="menu__list">
                 <li className="menu__item">
-                <ScrollLink
-                    to="about" 
+                  <ScrollLink
+                    to="about"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-about"
                     onClick={closeMenu}
                   >
-                  {getLangText("about")}
-                </ScrollLink>
+                    {getLangText("about")}
+                  </ScrollLink>
                   {/* <a href="#about" className="menu__link lng-about" onClick={closeMenu}>
                   {getLangText("about")}
                   </a> */}
                 </li>
                 <li className="menu__item">
-                <ScrollLink
-                    to="contact" 
+                  <ScrollLink
+                    to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-contact"
                     onClick={closeMenu}
                   >
-                  {getLangText("contact")}
-                </ScrollLink>
+                    {getLangText("contact")}
+                  </ScrollLink>
                   {/* <a href="#contact" className="menu__link lng-contact" onClick={closeMenu}>
                   {getLangText("contact")}
                   </a> */}
@@ -74,30 +72,30 @@ function Header() {
                   >
                     {getLangText("services")}
                   </a> */}
-                 <ScrollLink
-                    to="services" 
+                  <ScrollLink
+                    to="services"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-services"
                     onClick={closeMenu}
                   >
-                  {getLangText("services")}
-                </ScrollLink>
+                    {getLangText("services")}
+                  </ScrollLink>
                 </li>
                 <li className="menu__item">
-                <ScrollLink
-                    to="portfolio" 
+                  <ScrollLink
+                    to="portfolio"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-portfolio"
                     onClick={closeMenu}
                   >
-                  {getLangText("portfolio")}
-                </ScrollLink>
+                    {getLangText("portfolio")}
+                  </ScrollLink>
                   {/* <a
                     href="#portfolio"
                     className="menu__link lng-portfolio"
@@ -107,33 +105,33 @@ function Header() {
                   </a> */}
                 </li>
                 <li className="menu__item">
-                <ScrollLink
-                    to="blog" 
+                  <ScrollLink
+                    to="blog"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-blog"
                     onClick={closeMenu}
                   >
-                  {getLangText("blog")}
-                </ScrollLink>
+                    {getLangText("blog")}
+                  </ScrollLink>
                   {/* <a href="#blog" className="menu__link lng-blog" onClick={closeMenu}>
                   {getLangText("blog")}
                   </a> */}
                 </li>
                 <li className="menu__item">
-                <ScrollLink
-                    to="faq" 
+                  <ScrollLink
+                    to="faq"
                     spy={true}
                     smooth={true}
-                    offset={-50} 
+                    offset={-50}
                     duration={200}
                     className="menu__link lng-faq"
                     onClick={closeMenu}
                   >
-                  {getLangText("faq")}
-                </ScrollLink>
+                    {getLangText("faq")}
+                  </ScrollLink>
                   {/* <a href="#faq" className="menu__link lng-faq" onClick={closeMenu}>
                   {getLangText("faq")}
                   </a> */}

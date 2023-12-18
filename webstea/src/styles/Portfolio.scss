@@ -48,9 +48,30 @@
   font-weight: 400;
 }
 
-.portfolio__slide-content .btn {
+.portfolio__slide-link {
   margin-top: auto;
   margin-left: auto;
+  position: relative;
+  font-size: 20px;
+  padding-right: 70px;
+  transition: all 0.3s;
+}
+
+.portfolio__slide-link::after {
+  content: url(../images/arrow_right_small.svg);
+  position: absolute;
+  right: 15px;
+  top: 2px;
+  max-height: 16px;
+  transition: all 0.3s;
+}
+
+.portfolio__slide-link:hover {
+  color: $orange;
+  &::after {
+    filter: invert(50%) sepia(98%) saturate(2775%) hue-rotate(-16deg)
+      brightness(100%) contrast(101%);
+  }
 }
 
 .portfolio__slider .swiper-pagination-bullet {
@@ -62,6 +83,10 @@
 }
 .portfolio__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: $orange;
+}
+
+.portfolio__bottom {
+  text-align: right;
 }
 
 @media (max-width: 900px) {
