@@ -1,67 +1,41 @@
 import "../styles/Solution.scss";
+import { useLang } from "../scripts/LangContext.js";
 
 function Solution() {
+  const { getLangText } = useLang();
   return (
     <section className="solution section__mb">
       <div className="container">
-        <h2 className="text-center">Які задачі вирішить сайт?</h2>
+        <h2 className="text-center lng-solution-title">{getLangText("solution-title")}</h2>
         <div className="solution__inner">
           <div className="solution__item">
-            <h3>Збільшення онлайн-присутності</h3>
-            <p>
-              Ваш сайт стане потужною візитівкою для вашого бізнесу у світі
-              Інтернету. Це дозволить залучати нових клієнтів, знайомити їх з
-              вашими послугами та продуктами і показувати вашу унікальність.
-              Потенційні клієнти зможуть знайти вас в будь-який час, досліджуючи
-              ваші послуги та продукти без обмежень географії та часу.
+            <h3 className="lng-solution-first-subtitle">{getLangText("solution-first-subtitle")}</h3>
+            <p className="lng-solution-first-description">
+            {getLangText("solution-first-description")}
             </p>
           </div>
           <div className="solution__item">
-            <h3>Збільшення клієнтської бази</h3>
-            <p>
-              Онлайн-платформа надасть можливість досягти нових аудиторій та
-              ринків. Ви зможете привернути та обслуговувати клієнтів не тільки
-              з місця розташування, а й з різних куточків світу, привертаючи
-              увагу потенційних клієнтів через різноманітні канали, включаючи
-              рекламу, контент-маркетинг та соціальні мережі. Оптимізація для
-              пошукових систем (SEO) допоможе вам з'являтися на перших
-              результатах пошуку.
+            <h3 className="lng-solution-second-subtitle">{getLangText("solution-second-subtitle")}</h3>
+            <p className="lng-solution-second-description">
+            {getLangText("solution-second-description")}
             </p>
           </div>
           <div className="solution__item">
-            <h3>Швидкий ріст бізнесу</h3>
-            <p>
-              Онлайн-присутність через сайт може сприяти швидкому росту бізнесу
-              завдяки новим можливостям залучення клієнтів та розширенням
-              географії обслуговування. Завдяки доступності та зручності
-              онлайн-замовлень і онлайн-оплати, ви зможете прискорити процес
-              продажу. Це знижує час між першим зацікавленням клієнта та
-              здійсненням покупки, що сприяє швидкому росту вашого бізнесу.
+            <h3 className="lng-solution-third-subtitle">{getLangText("solution-third-subtitle")}</h3>
+            <p className="lng-solution-third-description">
+            {getLangText("solution-third-description")}
             </p>
           </div>
           <div className="solution__item">
-            <h3>Конкурентна вигода</h3>
-            <p>
-              Онлайн-платформа надасть можливість досягти нових аудиторій та
-              ринків. Ви зможете привернути та обслуговувати клієнтів не тільки
-              з місця розташування, а й з різних куточків світу. Ви зможете
-              привертати увагу потенційних клієнтів через різноманітні канали,
-              включаючи рекламу, контент-маркетинг та соціальні мережі.
-              Оптимізація для пошукових систем (SEO) допоможе вам з'являтися на
-              перших результатах пошуку.
+            <h3 className="lng-solution-fourth-subtitle">{getLangText("solution-fourth-subtitle")}</h3>
+            <p className="lng-solution-fourth-description">
+            {getLangText("solution-fourth-description")}
             </p>
           </div>
           <div className="solution__item">
-            <h3>Підвищення довіри</h3>
-            <p>
-              Професійний веб-дизайн та інформація на сайті створюють враження
-              надійності та професіоналізму. Це впливає на рівень довіри
-              клієнтів до вашої компанії. Клієнти, що перевіряють ваш сайт,
-              більш схильні довіряти вам, оскільки вони бачать вас як
-              справжнього професіонала у вашій галузі. Ці переваги вказують на
-              те, як сайт може прискорити ріст вашого бізнесу, залучити більше
-              клієнтів, підвищити його конкурентоспроможність та покращити
-              сприйняття вашої компанії клієнтами.
+            <h3 className="lng-solution-fifth-subtitle">{getLangText("solution-fifth-subtitle")}</h3>
+            <p className="lng-solution-fifth-description">
+            {getLangText("solution-fifth-description")}
             </p>
           </div>
         </div>

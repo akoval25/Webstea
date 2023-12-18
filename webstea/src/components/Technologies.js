@@ -14,12 +14,14 @@ import icon12 from "../images/icon_drupal.png";
 import icon13 from "../images/icon_photoshop.png";
 import icon14 from "../images/icon_figma.png";
 import icon15 from "../images/icon_github.png";
+import { useLang } from "../scripts/LangContext.js";
 
 function Technologies() {
+  const { getLangText } = useLang();
   return (
     <section className="technologies section__mb">
       <div className="container">
-        <h2 className="text-right">Технології, з якими ми працюємо</h2>
+        <h2 className="text-right lng-technologies">{getLangText("technologies")}</h2>
         <div className="technologies__inner">
           <div className="technologies__group --code">
             <img alt="icon" src={icon1}></img>

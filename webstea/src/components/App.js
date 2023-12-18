@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "../index.css";
 import "../index.scss";
 import Header from "../components/Header.js";
@@ -17,16 +16,9 @@ import FAQ from "../components/FAQ.js";
 import Solution from "../components/Solution.js";
 import Footer from "../components/Footer.js";
 
-
-
-
-
 function App() {
     return (
     <React.StrictMode>
-
-
-
         <Header />
         <Hero />
         <About />
@@ -42,9 +34,6 @@ function App() {
         <Solution />
         <Contact />
         <Footer />
-
-
-
     </React.StrictMode>
       );
     }

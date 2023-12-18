@@ -1,10 +1,12 @@
 import { useState, useRef } from "react";
 import "../styles/FAQ.scss";
+import { useLang } from "../scripts/LangContext.js";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [contentHeight, setContentHeight] = useState(0);
   const contentRef = useRef(null);
+  const { getLangText } = useLang();
 
   const handleAccordionClick = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -14,39 +16,35 @@ function FAQ() {
       setContentHeight(contentRef.current.scrollHeight);
     }
   };
+  
 
   const accordionItems = [
     {
-      title: "Перше запитання якесь дуже важливе?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      title: getLangText("faq-q1-title"),
+      content: getLangText("faq-q1-description"),
     },
     {
-      title: "Друге запитання якесь дуже важливе?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      title: getLangText("faq-q2-title"),
+      content:getLangText("faq-q2-description"),
     },
     {
-      title: "Третє запитання якесь дуже важливе?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      title: getLangText("faq-q3-title"),
+      content:getLangText("faq-q3-description"),
     },
     {
-      title: "Четверте запитання якесь дуже важливе?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      title: getLangText("faq-q4-title"),
+      content:getLangText("faq-q4-description"),
     },
     {
-      title: "П'яте запитання якесь дуже важливе?",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      title: getLangText("faq-q5-title"),
+      content:getLangText("faq-q5-description"),
     },
   ];
 
   return (
     <section id="faq" className="faq section__mb">
       <div className="container">
-        <h2 className="text-right">Часті запитання</h2>
+        <h2 className="text-right lng-faq-title">{getLangText("faq-title")}</h2>
         <div className="faq__inner">
           <div className="accordion__inner">
             {accordionItems.map((item, index) => (
