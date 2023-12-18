@@ -13,7 +13,9 @@ function Blog() {
   return (
     <section id="blog" className="blog section__mb">
       <div className="container">
-        <h2 className="text-right lng-blog-title">{getLangText("blog-title")}</h2>
+        <h2 className="text-right lng-blog-title">
+          {getLangText("blog-title")}
+        </h2>
         <div className="blog__inner">
           <>
             <Swiper
@@ -36,23 +38,14 @@ function Blog() {
               <SwiperSlide>
                 <div className="blog__slide">
                   <div className="blog__slide-content">
-                    <h3 className="lng-blog-first-subtitle">{getLangText("blog-first-subtitle")}</h3>
-                    <p className="lng-blog-first-description">{getLangText("blog-first-description")}</p>
-                    <a href="#" className="btn lng-blog-btn">
-                    {getLangText("blog-btn")}
-                    </a>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="blog__slide">
-                  <div className="blog__slide-content">
-                    <h3 className="lng-blog-second-subtitle">{getLangText("blog-second-subtitle")}</h3>
-                    <p className="lng-blog-second-description">
-                    {getLangText("blog-second-description")}
+                    <h3 className="lng-blog-first-subtitle">
+                      {getLangText("blog-first-subtitle")}
+                    </h3>
+                    <p className="lng-blog-first-description">
+                      {getLangText("blog-first-description")}
                     </p>
-                    <a href="#" className="btn lng-blog-btn">
-                    {getLangText("blog-btn")}
+                    <a href="#" className="blog__slide-link lng-blog-btn">
+                      {getLangText("blog-btn")}
                     </a>
                   </div>
                 </div>
@@ -60,10 +53,14 @@ function Blog() {
               <SwiperSlide>
                 <div className="blog__slide">
                   <div className="blog__slide-content">
-                    <h3 className="lng-blog-third-subtitle">{getLangText("blog-third-subtitle")}</h3>
-                    <p className="lng-blog-third-description">{getLangText("blog-third-description")}</p>
-                    <a href="#" className="btn lng-blog-btn">
-                    {getLangText("blog-btn")}
+                    <h3 className="lng-blog-second-subtitle">
+                      {getLangText("blog-second-subtitle")}
+                    </h3>
+                    <p className="lng-blog-second-description">
+                      {getLangText("blog-second-description")}
+                    </p>
+                    <a href="#" className="blog__slide-link lng-blog-btn">
+                      {getLangText("blog-btn")}
                     </a>
                   </div>
                 </div>
@@ -71,10 +68,14 @@ function Blog() {
               <SwiperSlide>
                 <div className="blog__slide">
                   <div className="blog__slide-content">
-                    <h3 className="lng-blog-fourth-subtitle">{getLangText("blog-fourth-subtitle")}</h3>
-                    <p className="lng-blog-fourth-description">{getLangText("blog-fourth-description")}</p>
-                    <a href="#" className="btn lng-blog-btn">
-                    {getLangText("blog-btn")}
+                    <h3 className="lng-blog-third-subtitle">
+                      {getLangText("blog-third-subtitle")}
+                    </h3>
+                    <p className="lng-blog-third-description">
+                      {getLangText("blog-third-description")}
+                    </p>
+                    <a href="#" className="blog__slide-link lng-blog-btn">
+                      {getLangText("blog-btn")}
                     </a>
                   </div>
                 </div>
@@ -82,16 +83,38 @@ function Blog() {
               <SwiperSlide>
                 <div className="blog__slide">
                   <div className="blog__slide-content">
-                  <h3 className="lng-blog-fifth-subtitle">{getLangText("blog-fifth-subtitle")}</h3>
-                    <p className="lng-blog-fifth-description">{getLangText("blog-fifth-description")}</p>
-                    <a href="#" className="btn lng-blog-btn">
-                    {getLangText("blog-btn")}
+                    <h3 className="lng-blog-fourth-subtitle">
+                      {getLangText("blog-fourth-subtitle")}
+                    </h3>
+                    <p className="lng-blog-fourth-description">
+                      {getLangText("blog-fourth-description")}
+                    </p>
+                    <a href="#" className="blog__slide-link lng-blog-btn">
+                      {getLangText("blog-btn")}
+                    </a>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="blog__slide">
+                  <div className="blog__slide-content">
+                    <h3 className="lng-blog-fifth-subtitle">
+                      {getLangText("blog-fifth-subtitle")}
+                    </h3>
+                    <p className="lng-blog-fifth-description">
+                      {getLangText("blog-fifth-description")}
+                    </p>
+                    <a href="#" className="blog__slide-link lng-blog-btn">
+                      {getLangText("blog-btn")}
                     </a>
                   </div>
                 </div>
               </SwiperSlide>
             </Swiper>
           </>
+          <div className="blog__bottom">
+            <a className="btn">See all</a>
+          </div>
         </div>
       </div>
     </section>
