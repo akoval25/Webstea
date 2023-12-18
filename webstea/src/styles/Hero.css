@@ -1,0 +1,64 @@
+.hero__inner {
+  background-image: url(../images/hero.png);
+  text-align: right;
+  color: #fdfdfe;
+  background-position: -6% 3%;
+  background-repeat: no-repeat;
+  background-size: 69%;
+  min-height: min(742px, 52.6315789474vw);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: max(300px, min(660px, 100vh - 150px));
+}
+
+.hero__inner h1 {
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(20px, 5vw, 55px);
+  max-width: min(580px, 65%);
+  margin-left: auto;
+}
+
+.hero__inner p {
+  line-height: 32px;
+  max-width: 385px;
+  margin-left: auto;
+}
+
+.hero__inner .btn {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .hero__inner {
+    background-size: 70%;
+    padding-bottom: 0px;
+  }
+  .hero__inner p {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 430px) {
+  .hero__content {
+    justify-content: space-between;
+  }
+  .hero__inner {
+    background-size: 100%;
+    padding-top: 20px;
+    background-position: -6% 10%;
+  }
+  .hero__inner p {
+    margin-top: auto;
+    margin-left: 0;
+    text-align: left;
+    margin-bottom: 40px;
+    max-width: 100%;
+    text-wrap: balance;
+  }
+  .hero__inner .btn {
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=Hero.css.map */

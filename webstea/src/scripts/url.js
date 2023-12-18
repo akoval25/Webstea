@@ -15,4 +15,11 @@ export const generateUrl = (currentLang, basePath) => {
     const htmlTag = document.querySelector('html');
     htmlTag.setAttribute('lang', currentLang === 'en' || currentLang === 'ua' ? currentLang : 'ua');
   });
+
+  export const handleLandingSwitch = (e, currentLang) => {
+    e.preventDefault();
+    const currentUrl = window.location.pathname;
+    const newUrl = `/${currentLang}/landing-page`;
+    window.location.href = newUrl;
+  };
   

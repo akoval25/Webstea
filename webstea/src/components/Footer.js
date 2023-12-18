@@ -5,8 +5,11 @@ import Linkedin from "../images/Linkedin.svg";
 import Instagram from "../images/Instagram.svg";
 import Facebook from "../images/Facebook.svg";
 import Behance from "../images/Behance.svg";
+import { useLang } from "../scripts/LangContext.js";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
+  const { getLangText } = useLang();
   return (
     <footer className="footer">
       <div className="container">
@@ -16,29 +19,57 @@ function Footer() {
           </a>
           <ul className="footer__list">
             <li className="footer__item">
-              <a href="#about" className="footer__link">
-                Про нас
-              </a>
+            <ScrollLink
+                    to="about" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="footer__link lng-footer-about">
+              {getLangText("footer-about")}
+            </ScrollLink>
             </li>
             <li className="footer__item">
-              <a href="#services" className="footer__link">
-                Послуги
-              </a>
+            <ScrollLink
+                    to="services" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200} className="footer__link lng-footer-services">
+              {getLangText("footer-services")}
+            </ScrollLink>
             </li>
             <li className="footer__item">
-              <a href="#portfolio" className="footer__link">
-                Портфоліо
-              </a>
+            <ScrollLink
+                    to="portfolio" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="footer__link lng-footer-portfolio">
+              {getLangText("footer-portfolio")}
+            </ScrollLink>
             </li>
             <li className="footer__item">
-              <a href="#blog" className="footer__link">
-                Блог
-              </a>
+            <ScrollLink
+                    to="blog" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200}
+                    className="footer__link lng-footer-blog">
+              {getLangText("footer-blog")}
+              </ScrollLink>
             </li>
             <li className="footer__item">
-              <a href="#faq" className="footer__link">
-                FAQ
-              </a>
+            <ScrollLink
+                    to="faq" 
+                    spy={true}
+                    smooth={true}
+                    offset={-50} 
+                    duration={200} className="footer__link lng-footer-faq">
+              {getLangText("footer-faq")}
+            </ScrollLink>
             </li>
           </ul>
           <div className="footer__contact">

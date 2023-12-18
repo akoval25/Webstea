@@ -1,0 +1,52 @@
+.technologies h2 {
+  margin-bottom: 72px;
+  max-width: 700px;
+  margin-left: auto;
+}
+
+.technologies__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.technologies__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.--code {
+  gap: 80px;
+}
+
+.--cms {
+  gap: 50px;
+}
+
+.--other {
+  gap: 70px;
+}
+
+.technologies__group img {
+  transition: all 0.3s;
+}
+.technologies__group img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .technologies__group img {
+    max-width: 12%;
+  }
+  .--code {
+    gap: 30px;
+  }
+  .--cms {
+    gap: 30px;
+  }
+  .--other {
+    gap: 40px;
+  }
+}/*# sourceMappingURL=Technologies.css.map */

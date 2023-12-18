@@ -440,7 +440,7 @@ p {
 }
 
 .btn::after {
-  content: url(/images/arrow_right.svg);
+  content: url(./images/arrow_right.svg);
   position: absolute;
   max-height: 24px;
   right: 15px;

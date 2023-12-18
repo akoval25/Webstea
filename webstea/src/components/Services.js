@@ -4,15 +4,17 @@ import servicesIcon2 from "../images/services__bottom-img-2.svg";
 import servicesIcon3 from "../images/services__bottom-img-3.svg";
 import servicesIcon4 from "../images/services__bottom-img-4.svg";
 import { useLang } from "../scripts/LangContext.js";
+import { handleLandingSwitch } from "../scripts/url.js";
 
 function Services() {
   const { getLangText } = useLang();
+  const currentLang = window.location.pathname.split('/')[1];
   return (
     <section id="services" className="services section__mb">
       <div className="container">
         <h2 className="lng-services-title">{getLangText("services-title")}</h2>
         <div className="services__inner">
-          <a href="#" className="services__item">
+          <a href="#" className="services__item" onClick={(e) => handleLandingSwitch(e, currentLang)}>
             <h3 className="lng-services-landing-title">{getLangText("services-landing-title")}</h3>
             <p className="lng-services-landing-description">
             {getLangText("services-landing-description")}

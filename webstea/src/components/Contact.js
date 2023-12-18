@@ -1,28 +1,30 @@
 import "../styles/Contact.scss";
+import { useLang } from "../scripts/LangContext.js";
 
 function Contact() {
+  const { getLangText } = useLang();
   return (
     <section id="contact" className="contact section__mb">
       <div className="container">
-        <h2>Давайте обговоримо вашу ідею!</h2>
+        <h2 className="lng-contact-title">{getLangText("contact-title")}</h2>
         <div className="contact__inner">
           <form className="form">
             <div className="form__row">
               <div className="input__inner">
                 <input
                   id="name"
-                  className="form__input"
+                  className="form__input lng-contact-name"
                   type="text"
-                  placeholder="Ім’я"
+                  placeholder={getLangText("contact-name")}
                   require
                 ></input>
               </div>
               <div className="input__inner">
                 <input
                   id="tel"
-                  className="form__input"
+                  className="form__input lng-contact-tel"
                   type="tel"
-                  placeholder="Телефон"
+                  placeholder={getLangText("contact-tel")}
                   require
                 ></input>
               </div>
@@ -31,9 +33,9 @@ function Contact() {
               <div className="input__inner">
                 <input
                   id="email"
-                  className="form__input"
+                  className="form__input lng-contact-mail"
                   type="email"
-                  placeholder="E-mail"
+                  placeholder={getLangText("contact-mail")}
                   require
                 ></input>
               </div>
@@ -41,27 +43,27 @@ function Contact() {
                 <select
                   placeholder="Тип сайту"
                   id="type"
-                  className="form__select"
+                  className="form__select lng-contact-select"
                   require
                 >
-                  <option selected>Тип сайту</option>
-                  <option value="landing">Landing page</option>
-                  <option value="card">Сайт візитка</option>
-                  <option value="eshop">Інтернет магазин</option>
-                  <option value="corporate">Корпоративний сайт</option>
-                  <option value="catalog">Сайт каталог</option>
-                  <option value="individual">Індивідуальний проект</option>
+                  <option selected className="lng-contact-select">{getLangText("contact-select")}</option>
+                  <option value="landing" className="lng-contact-landing">{getLangText("contact-landing")}</option>
+                  <option value="card" className="lng-contact-card">{getLangText("contact-card")}</option>
+                  <option value="eshop" className="lng-contact-shop">{getLangText("contact-shop")}</option>
+                  <option value="corporate" className="lng-contact-site">{getLangText("contact-site")}</option>
+                  <option value="catalog" className="lng-contact-catalog">{getLangText("contact-catalog")}</option>
+                  <option value="individual" className="lng-contact-project">{getLangText("contact-project")}</option>
                 </select>
               </div>
             </div>
 
             <textarea
               id="message"
-              className="form__textarea"
-              placeholder="Подробиці проєкту"
+              className="form__textarea lng-contact-details"
+              placeholder={getLangText("contact-details")}
             ></textarea>
-            <submit type="submit" className="btn">
-              Відправити
+            <submit type="submit" className="btn lng-contact-btn">
+            {getLangText("contact-btn")}
             </submit>
           </form>
         </div>

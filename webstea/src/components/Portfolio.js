@@ -2,14 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/Portfolio.scss";
+import { useLang } from "../scripts/LangContext.js";
 
 import { Pagination } from "swiper/modules";
 
 function Portfolio() {
+  const { getLangText } = useLang();
   return (
     <section id="portfolio" className="portfolio section__mb">
       <div className="container">
-        <h2>Наші проєкти</h2>
+        <h2 className="lng-portfolio-title">{getLangText("portfolio-title")}</h2>
         <div className="portfolio__inner">
           <>
             <Swiper
@@ -32,10 +34,10 @@ function Portfolio() {
               <SwiperSlide>
                 <div className="portfolio__slide">
                   <div className="portfolio__slide-content">
-                    <h3>Сайт для Василя Пупкіна</h3>
-                    <p>Ми зробили сайт і вийшло дуже прикольно</p>
-                    <a href="#" className="btn">
-                      Дивитися кейс
+                    <h3 className="lng-portfolio-first-subtitle">{getLangText("portfolio-first-subtitle")}</h3>
+                    <p className="lng-portfolio-first-description">{getLangText("portfolio-first-description")}</p>
+                    <a href="#" className="btn lng-portfolio-btn">
+                    {getLangText("portfolio-btn")}
                     </a>
                   </div>
                 </div>
@@ -43,10 +45,10 @@ function Portfolio() {
               <SwiperSlide>
                 <div className="portfolio__slide">
                   <div className="portfolio__slide-content">
-                    <h3>Сайт для Укрпошти</h3>
-                    <p>За це ми отримали магнітик Пес Патрон</p>
-                    <a href="#" className="btn">
-                      Дивитися магнітик
+                    <h3 className="lng-portfolio-second-subtitle">{getLangText("portfolio-second-subtitle")}</h3>
+                    <p className="lng-portfolio-second-description">{getLangText("portfolio-second-description")}</p>
+                    <a href="#" className="btn lng-portfolio-btn">
+                    {getLangText("portfolio-btn")}
                     </a>
                   </div>
                 </div>
@@ -54,10 +56,10 @@ function Portfolio() {
               <SwiperSlide>
                 <div className="portfolio__slide">
                   <div className="portfolio__slide-content">
-                    <h3>Сайт для художника Адольфа</h3>
-                    <p>Ціна за сайт склала близько 1488 євро</p>
-                    <a href="#" className="btn">
-                      \o Зіганути
+                    <h3 className="lng-portfolio-third-subtitle">{getLangText("portfolio-third-subtitle")}</h3>
+                    <p className="lng-portfolio-third-description">{getLangText("portfolio-third-description")}</p>
+                    <a href="#" className="btn lng-portfolio-btn">
+                    {getLangText("portfolio-btn")}
                     </a>
                   </div>
                 </div>
@@ -65,10 +67,10 @@ function Portfolio() {
               <SwiperSlide>
                 <div className="portfolio__slide">
                   <div className="portfolio__slide-content">
-                    <h3>Сайт про меблі</h3>
-                    <p>Ми зробили сайт, але який, то треба бачити</p>
-                    <a href="#" className="btn">
-                      Дивитися крісло
+                    <h3 className="lng-portfolio-fouth-subtitle">{getLangText("portfolio-fouth-subtitle")}</h3>
+                    <p className="lng-portfolio-fouth-description">{getLangText("portfolio-fouth-description")}</p>
+                    <a href="#" className="btn lng-portfolio-btn">
+                    {getLangText("portfolio-btn")}
                     </a>
                   </div>
                 </div>
