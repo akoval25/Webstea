@@ -3,11 +3,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/Portfolio.scss";
 import { useLang } from "../scripts/LangContext.js";
+import { Link } from 'react-router-dom';
+import { generateUrl } from '../scripts/url.js';
 
 import { Pagination } from "swiper/modules";
 
 function Portfolio() {
-  const { getLangText } = useLang();
+  // const { getLangText } = useLang();
+  const { getLangText, currentLang } = useLang();
+  const currentLangPath = generateUrl(currentLang, '');
+
   return (
     <section id="portfolio" className="portfolio section__mb">
       <div className="container">
@@ -108,7 +113,8 @@ function Portfolio() {
             </Swiper>
           </>
           <div className="portfolio__bottom">
-            <a className="btn">See all</a>
+          <Link 
+            to={`${currentLangPath}/portfolio`} className="btn">See all</Link >
           </div>
         </div>
       </div>

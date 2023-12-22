@@ -6,6 +6,7 @@ import LanguageSelector from "../scripts/currentLang.js";
 import { useLang } from "../scripts/LangContext.js";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
+
 function Header() {
   const menuBtnRef = useRef(null);
   const menuRef = useRef(null);
@@ -22,6 +23,7 @@ function Header() {
       menuRef.current.classList.remove("menu--active");
     }
   };
+
   return (
     <div className="App">
       <header className="App-header header">
@@ -34,10 +36,11 @@ function Header() {
               <ul className="menu__list">
                 <li className="menu__item">
                   <ScrollLink
-                    to="about"
+                  to="about"
+                    // to="about"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-about"
                     onClick={closeMenu}
@@ -53,7 +56,7 @@ function Header() {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-contact"
                     onClick={closeMenu}
@@ -76,7 +79,7 @@ function Header() {
                     to="services"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-services"
                     onClick={closeMenu}
@@ -89,7 +92,7 @@ function Header() {
                     to="portfolio"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-portfolio"
                     onClick={closeMenu}
@@ -109,7 +112,7 @@ function Header() {
                     to="blog"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-blog"
                     onClick={closeMenu}
@@ -125,7 +128,7 @@ function Header() {
                     to="faq"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-200}
                     duration={200}
                     className="menu__link lng-faq"
                     onClick={closeMenu}

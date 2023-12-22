@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header.js";
-import Contact from "../components/Contact.js";
+import NotFound from "../components/NotFound.js";
 import Footer from "../components/Footer.js";
-import Landing from "../components/Landing.js";
+
 import { animateScroll as scroll } from "react-scroll";
 
 
 
-function LandingApp() {
+function NotFoundApp() {
   useEffect(() => {
     scroll.scrollTo(0, {
       duration: 0, 
@@ -18,11 +18,10 @@ function LandingApp() {
   return (
     <React.StrictMode>
       <Header />
-      <Landing />
-      <Contact />
+      <NotFound />
       <Footer />
     </React.StrictMode>
   );
 }
 
-export default LandingApp;
+export default NotFoundApp;
