@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useLang } from "../scripts/LangContext.js";
+import { Link } from 'react-router-dom';
+import { generateUrl } from '../scripts/url.js';
 
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -9,7 +11,10 @@ import "../styles/Blog.scss";
 import { Scrollbar } from "swiper/modules";
 
 function Blog() {
-  const { getLangText } = useLang();
+  // const { getLangText } = useLang();
+  const { getLangText, currentLang } = useLang();
+  const currentLangPath = generateUrl(currentLang, '');
+
   return (
     <section id="blog" className="blog section__mb">
       <div className="container">
@@ -113,7 +118,8 @@ function Blog() {
             </Swiper>
           </>
           <div className="blog__bottom">
-            <a className="btn">See all</a>
+          <Link 
+            to={`${currentLangPath}/blog`} className="btn">See all</Link>
           </div>
         </div>
       </div>

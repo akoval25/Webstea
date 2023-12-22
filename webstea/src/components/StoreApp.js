@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import Header from "../components/Header.js";
 import Contact from "../components/Contact.js";
 import Footer from "../components/Footer.js";
-import Landing from "../components/Landing.js";
+import Store from "../components/Store.js";
 import { animateScroll as scroll } from "react-scroll";
 
 
 
-function LandingApp() {
+function StoreApp() {
   useEffect(() => {
     scroll.scrollTo(0, {
       duration: 0, 
@@ -18,11 +18,11 @@ function LandingApp() {
   return (
     <React.StrictMode>
       <Header />
-      <Landing />
+      <Store />
       <Contact />
       <Footer />
     </React.StrictMode>
   );
 }
 
-export default LandingApp;
+export default StoreApp;

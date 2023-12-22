@@ -4,20 +4,24 @@ import servicesIcon2 from "../images/services__bottom-img-2.svg";
 import servicesIcon3 from "../images/services__bottom-img-3.svg";
 import servicesIcon4 from "../images/services__bottom-img-4.svg";
 import { useLang } from "../scripts/LangContext.js";
-import { handleLandingSwitch } from "../scripts/url.js";
+import { Link } from 'react-router-dom';
+import { generateUrl } from '../scripts/url.js';
+
 
 function Services() {
-  const { getLangText } = useLang();
-  const currentLang = window.location.pathname.split("/")[1];
+ 
+
+  const { getLangText, currentLang } = useLang();
+  const currentLangPath = generateUrl(currentLang, '');
+
   return (
     <section id="services" className="services section__mb">
       <div className="container">
         <h2 className="lng-services-title">{getLangText("services-title")}</h2>
         <div className="services__inner">
-          <a
-            href="#"
+          <Link 
+            to={`${currentLangPath}/landing-page`}
             className="services__item"
-            onClick={(e) => handleLandingSwitch(e, currentLang)}
           >
             <h3 className="lng-services-landing-title">
               {getLangText("services-landing-title")}
@@ -25,11 +29,13 @@ function Services() {
             <p className="services__text lng-services-landing-description">
               {getLangText("services-landing-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            <p className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
-          <a href="#" className="services__item">
+          </Link>
+          <Link 
+            to={`${currentLangPath}/business-card`} 
+            className="services__item">
             <h3 className="lng-services-card-title">
               {getLangText("services-card-title")}
             </h3>
@@ -39,8 +45,9 @@ function Services() {
             <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
-          <a href="#" className="services__item">
+            </Link>
+            <Link 
+            to={`${currentLangPath}/e-store`}  className="services__item">
             <h3 className="lng-services-shop-title">
               {getLangText("services-shop-title")}
             </h3>
@@ -50,8 +57,9 @@ function Services() {
             <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
-          <a href="#" className="services__item">
+            </Link>
+            <Link 
+            to={`${currentLangPath}/corporate`} className="services__item">
             <h3 className="lng-services-corporate-title">
               {getLangText("services-corporate-title")}
             </h3>
@@ -61,8 +69,9 @@ function Services() {
             <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
-          <a href="#" className="services__item">
+            </Link>
+            <Link 
+            to={`${currentLangPath}/catalog`} className="services__item">
             <h3 className="lng-services-catalog-title">
               {getLangText("services-catalog-title")}
             </h3>
@@ -72,8 +81,9 @@ function Services() {
             <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
-          <a href="#" className="services__item">
+            </Link>
+            <Link 
+            to={`${currentLangPath}/custom`}  className="services__item">
             <h3 className="lng-services-project-title">
               {getLangText("services-project-title")}
             </h3>
@@ -83,7 +93,7 @@ function Services() {
             <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
             </p>
-          </a>
+            </Link>
         </div>
         <div className="services__bottom">
           <div className="services__bottom-item">
