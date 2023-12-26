@@ -4,13 +4,39 @@ import "../styles/Header.scss";
 import { useRef } from "react";
 import LanguageSelector from "../scripts/currentLang.js";
 import { useLang } from "../scripts/LangContext.js";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { Link as ScrollLink, animateScroll, scroller as scroll } from "react-scroll";
+// import { withRouter } from 'react-router-dom';
+import React from 'react';
+import { Link as ScrollLink, scroller } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+
+
+
+// function Header() {
+//   const menuBtnRef = useRef(null);
+//   const menuRef = useRef(null);
+//   const { getLangText } = useLang();
+
+
+//   const toggleMenu = () => {
+//     menuBtnRef.current.classList.toggle("menu__btn--active");
+//     menuRef.current.classList.toggle("menu--active");
+//   };
+
+//   const closeMenu = () => {
+//     if (menuRef.current.classList.contains("menu--active")) {
+//       menuBtnRef.current.classList.remove("menu__btn--active");
+//       menuRef.current.classList.remove("menu--active");
+//     }
+//   };
+
 
 
 function Header() {
   const menuBtnRef = useRef(null);
   const menuRef = useRef(null);
-  const { getLangText } = useLang();
+  const { getLangText, currentLang } = useLang();
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     menuBtnRef.current.classList.toggle("menu__btn--active");
@@ -24,18 +50,65 @@ function Header() {
     }
   };
 
+  const handleMenuItemClick = (to) => {
+    const newUrl = `/${currentLang}`;
+    console.log('New URL:', newUrl);
+  
+    navigate(newUrl);
+  
+    setTimeout(() => {
+      console.log('Scrolling to:', to);
+      scroller.scrollTo(to, {
+        spy: true,
+        smooth: true,
+        offset: -200,
+        duration: 200,
+      });
+    }, 0);
+  };
+
   return (
     <div className="App">
       <header className="App-header header">
         <div className="container">
           <div className="header__top">
-            <a href="#" className="logo__link">
+
+          <ScrollLink
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={200}
+                className="logo__link"
+                onClick={() => { handleMenuItemClick('hero');}}
+              >
+                    <img src={logo}></img>
+                  </ScrollLink>
+            {/* <Link 
+            to={`/${currentLang}`}
+            className="logo__link"
+            >
               <img src={logo}></img>
-            </a>
+            </Link> */}
+            {/* <a href= "/${currentLang}" className="logo__link">
+              <img src={logo}></img>
+            </a> */}
             <nav className="menu" ref={menuRef}>
               <ul className="menu__list">
                 <li className="menu__item">
-                  <ScrollLink
+                <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={200}
+                className="menu__link lng-about"
+                onClick={() => { handleMenuItemClick('about'); closeMenu(); }}
+              >
+                    {getLangText("about")}
+                  </ScrollLink>
+                
+                  {/* <ScrollLink
                   to="about"
                     // to="about"
                     spy={true}
@@ -46,10 +119,8 @@ function Header() {
                     onClick={closeMenu}
                   >
                     {getLangText("about")}
-                  </ScrollLink>
-                  {/* <a href="#about" className="menu__link lng-about" onClick={closeMenu}>
-                  {getLangText("about")}
-                  </a> */}
+                  </ScrollLink> */}
+
                 </li>
                 <li className="menu__item">
                   <ScrollLink
@@ -59,7 +130,8 @@ function Header() {
                     offset={-200}
                     duration={200}
                     className="menu__link lng-contact"
-                    onClick={closeMenu}
+                    // onClick={closeMenu}
+                    onClick={() => { handleMenuItemClick('contact'); closeMenu(); }}
                   >
                     {getLangText("contact")}
                   </ScrollLink>
@@ -82,7 +154,8 @@ function Header() {
                     offset={-200}
                     duration={200}
                     className="menu__link lng-services"
-                    onClick={closeMenu}
+                    // onClick={closeMenu}
+                    onClick={() => { handleMenuItemClick('services'); closeMenu(); }}
                   >
                     {getLangText("services")}
                   </ScrollLink>
@@ -95,7 +168,8 @@ function Header() {
                     offset={-200}
                     duration={200}
                     className="menu__link lng-portfolio"
-                    onClick={closeMenu}
+                    // onClick={closeMenu}
+                    onClick={() => { handleMenuItemClick('portfolio'); closeMenu(); }}
                   >
                     {getLangText("portfolio")}
                   </ScrollLink>
@@ -115,7 +189,8 @@ function Header() {
                     offset={-200}
                     duration={200}
                     className="menu__link lng-blog"
-                    onClick={closeMenu}
+                    // onClick={closeMenu}
+                    onClick={() => { handleMenuItemClick('blog'); closeMenu(); }}
                   >
                     {getLangText("blog")}
                   </ScrollLink>
@@ -131,7 +206,8 @@ function Header() {
                     offset={-200}
                     duration={200}
                     className="menu__link lng-faq"
-                    onClick={closeMenu}
+                    // onClick={closeMenu}
+                    onClick={() => { handleMenuItemClick('faq'); closeMenu(); }}
                   >
                     {getLangText("faq")}
                   </ScrollLink>

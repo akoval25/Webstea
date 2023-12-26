@@ -6,17 +6,52 @@ import Instagram from "../images/Instagram.svg";
 import Facebook from "../images/Facebook.svg";
 import Behance from "../images/Behance.svg";
 import { useLang } from "../scripts/LangContext.js";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
+import { Link as ScrollLink, scroller } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
-  const { getLangText } = useLang();
+  // const { getLangText } = useLang();
+
+  const { getLangText, currentLang } = useLang();
+  const navigate = useNavigate();
+
+  const handleMenuItemClick = (to) => {
+    const newUrl = `/${currentLang}`;
+    console.log('New URL:', newUrl);
+  
+    navigate(newUrl);
+  
+    setTimeout(() => {
+      console.log('Scrolling to:', to);
+      scroller.scrollTo(to, {
+        spy: true,
+        smooth: true,
+        offset: -200,
+        duration: 200,
+      });
+    }, 0);
+  };
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer__inner">
-          <a href="#" className="logo__link">
+        <ScrollLink
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={200}
+                className="logo__link"
+                onClick={() => { handleMenuItemClick('hero');}}
+              >
+                    <img src={logo}></img>
+                  </ScrollLink>
+          {/* <a href="#" className="logo__link">
             <img src={logo}></img>
-          </a>
+          </a> */}
           <ul className="footer__list">
             <li className="footer__item">
             <ScrollLink
@@ -25,7 +60,8 @@ function Footer() {
                     smooth={true}
                     offset={-50} 
                     duration={200}
-                    className="footer__link lng-footer-about">
+                    className="footer__link lng-footer-about"
+                    onClick={() => { handleMenuItemClick('about'); }}>
               {getLangText("footer-about")}
             </ScrollLink>
             </li>
@@ -35,7 +71,8 @@ function Footer() {
                     spy={true}
                     smooth={true}
                     offset={-50} 
-                    duration={200} className="footer__link lng-footer-services">
+                    duration={200} className="footer__link lng-footer-services"
+                    onClick={() => { handleMenuItemClick('services'); }}>
               {getLangText("footer-services")}
             </ScrollLink>
             </li>
@@ -46,7 +83,8 @@ function Footer() {
                     smooth={true}
                     offset={-50} 
                     duration={200}
-                    className="footer__link lng-footer-portfolio">
+                    className="footer__link lng-footer-portfolio"
+                    onClick={() => { handleMenuItemClick('portfolio'); }}>
               {getLangText("footer-portfolio")}
             </ScrollLink>
             </li>
@@ -57,7 +95,8 @@ function Footer() {
                     smooth={true}
                     offset={-50} 
                     duration={200}
-                    className="footer__link lng-footer-blog">
+                    className="footer__link lng-footer-blog"
+                    onClick={() => { handleMenuItemClick('blog'); }}>
               {getLangText("footer-blog")}
               </ScrollLink>
             </li>
@@ -67,7 +106,8 @@ function Footer() {
                     spy={true}
                     smooth={true}
                     offset={-50} 
-                    duration={200} className="footer__link lng-footer-faq">
+                    duration={200} className="footer__link lng-footer-faq"
+                    onClick={() => { handleMenuItemClick('faq'); }}>
               {getLangText("footer-faq")}
             </ScrollLink>
             </li>
