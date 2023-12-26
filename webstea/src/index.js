@@ -25,6 +25,7 @@ const Apps = () => {
         <Route path="/en" element={<App />} />
         <Route path="/ua" element={<App />} />
         <Route path="/" element={<App />} />
+        <Route path="/Webstea" element={<App />} />
         <Route path="/ua/landing-page" element={<LandingApp />} />
         <Route path="/en/landing-page" element={<LandingApp />} />
         <Route path="/ua/business-card" element={<BusinessApp />} />
