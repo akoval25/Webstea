@@ -14,22 +14,13 @@ app.options('/send-email', cors());
 app.post('/send-email', (req, res) => {
   const { name, tel, email, type, message } = req.body;
 
-    // const transporter = nodemailer.createTransport({
-    // host: 'smtp.gmail.com',
-    // port: 465,
-    // secure: true,
-    // auth: {
-    //   user: 'arcgerage8@gmail.com',
-    //   pass: '9S=0z!`d1:PZevDYgY%K1',
-    // },
-
   const transporter = nodemailer.createTransport({
     host: 'mail.webstea.studio',
     port: 465,
     secure: true,
     auth: {
       user: 'no-reply@webstea.studio',
-      pass: '5-DBaOlRVUk_CkM0',
+      pass: '',
     },
     tls: {
       rejectUnauthorized: false,
