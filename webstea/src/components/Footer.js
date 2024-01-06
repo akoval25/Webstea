@@ -19,12 +19,12 @@ function Footer() {
 
   const handleMenuItemClick = (to) => {
     const newUrl = `/${currentLang}`;
-    console.log('New URL:', newUrl);
+
   
     navigate(newUrl);
   
     setTimeout(() => {
-      console.log('Scrolling to:', to);
+
       scroller.scrollTo(to, {
         spy: true,
         smooth: true,
