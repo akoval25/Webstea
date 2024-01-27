@@ -1,8 +1,50 @@
 @import "Variables";
 
 .articles {
-    background-color: royalblue;
-    margin-top: 200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+}
+.article__inner {
+  padding-top: 50px;
+}
+.article__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px max(20px, calc((100% - (390px * 3)) / 3));
+  margin-top: 50px;
+}
+.article__item {
+  max-width: 390px;
+}
+.article__img {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.article__img img {
+  transition: all 0.3s;
+}
+
+.article__img:hover img {
+  transform: scale(1.1);
+}
+
+.article__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.article__description {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1249px) {
+  .article__items {
+    gap: 80px max(20px, calc((100% - (390px * 2)) / 2));
+  }
 }
