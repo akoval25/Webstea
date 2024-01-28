@@ -1,7 +1,6 @@
 @import "Variables";
 
 .hero {
-  margin-top: 137px;
 }
 .hero__inner {
   background-image: url(../images/hero.png);
@@ -41,9 +40,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    margin-top: 110px;
-  }
   .hero__inner {
     background-size: 70%;
     padding-bottom: 0px;
@@ -53,9 +49,6 @@
   }
 }
 @media (max-width: 430px) {
-  .hero {
-    margin-top: 75px;
-  }
   .hero__content {
     justify-content: space-between;
   }

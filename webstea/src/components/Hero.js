@@ -3,8 +3,8 @@ import "../styles/Hero.scss";
 import React from "react";
 import { useLang } from "../scripts/LangContext.js";
 
-import { Link as ScrollLink, scroller } from 'react-scroll';
-import { useNavigate } from 'react-router-dom';
+import { Link as ScrollLink, scroller } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
   // const { getLangText } = useLang();
@@ -14,9 +14,9 @@ function Hero() {
 
   const handleMenuItemClick = (to) => {
     const newUrl = `/${currentLang}`;
-  
+
     navigate(newUrl);
-  
+
     setTimeout(() => {
       scroller.scrollTo(to, {
         spy: true,
@@ -28,7 +28,7 @@ function Hero() {
   };
 
   return (
-    <section id="hero" className="hero section__mb">
+    <section id="hero" className="hero section__mb section__first">
       <div className="container">
         <div className="hero__inner">
           <div className="hero__content">
@@ -38,16 +38,18 @@ function Hero() {
             </p>
 
             <ScrollLink
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-200}
-                duration={200}
-                className="btn lng-hero-link"
-                onClick={() => { handleMenuItemClick('contact');}}
-              >
-                  {getLangText("hero-link")}
-                  </ScrollLink>
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={200}
+              className="btn lng-hero-link"
+              onClick={() => {
+                handleMenuItemClick("contact");
+              }}
+            >
+              {getLangText("hero-link")}
+            </ScrollLink>
 
             {/* <a href="#" className="btn lng-hero-link">
               {getLangText("hero-link")}
