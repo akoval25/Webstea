@@ -7,7 +7,10 @@ function AllPortfolio() {
   return (
     <section className="allportfolio">
 
-          <h2> Наші роботи!</h2>
+          <div className="allportfolio__top">
+
+          </div>
+          <div className="allportfolio__items">test</div>
   
     </section>
   );
