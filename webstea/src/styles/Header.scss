@@ -1,9 +1,8 @@
 @import "Variables";
 
 .header {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.95);
   z-index: 5;
-  backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +17,8 @@
   padding: 10px 0px;
 }
 
-.logo__link {
+.logo__link img {
+  max-width: 50%;
 }
 
 .menu {
@@ -70,6 +70,7 @@
 }
 
 @media (max-width: 768px) {
+
   .menu__btn-wrapper {
     display: block;
     padding: 15px;
@@ -78,9 +79,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .logo__link img {
-    max-width: 80%;
   }
   .menu {
     position: absolute;
@@ -167,7 +165,5 @@
 }
 
 @media (max-width: 425px) {
-  .logo__link img {
-    max-width: 50%;
-  }
+
 }
