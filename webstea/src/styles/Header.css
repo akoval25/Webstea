@@ -53,9 +53,6 @@
     justify-content: center;
     align-items: center;
   }
-  .logo__link img {
-    max-width: 80%;
-  }
   .menu {
     position: absolute;
     z-index: 2;
@@ -143,7 +140,4 @@
 }
 
 @media (max-width: 425px) {
-  .logo__link img {
-    max-width: 50%;
-  }
 }/*# sourceMappingURL=Header.css.map */
