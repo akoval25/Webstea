@@ -1,8 +1,83 @@
 @import "Variables";
 
-.landing {
-    background-color: red;
-    margin-top: 200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+.landing {}
+
+.landing h2 {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.landing h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.component__text-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-text {
+    max-width: 50%;
+}
+
+.content-text h3 {
+
+
+}
+
+.content-text p+p {
+    margin-top: 10px;
+}
+
+.content-img {}
+
+.component__flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.component__flex-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.component__flex-item {}
+
+.component__list li+ li{
+    margin-top: 5px;
+}
+
+li::before{
+    color: $orange;
+    padding-right: 10px;
+}
+
+.list-circle li::before{    
+    content: "\25CF";
+    font-size: 20px;
+}
+
+.list-complete li::before{
+    content: "\2714";
+    
+}
+
+.list-plus li::before{
+    content: "\271A";
+}
+
+@media (max-width: 768px) {
+    .component__text-image{
+        flex-direction: column-reverse;
+    }
+    .content-text{
+        max-width: 100%;
+    }
 }
