@@ -13,6 +13,7 @@ import CatalogApp from "./components/CatalogApp.js";
 import CustomApp from "./components/CustomApp.js";
 import AllPortfolioApp from "./components/AllPortfolioApp.js";
 import ArticlesApp from "./components/ArticlesApp.js";
+import ArticleOneApp from "./components/ArticleOneApp.js";
 import NotFoundApp from "./components/NotFoundApp.js";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -44,6 +45,8 @@ const Apps = () => {
         <Route path="/en/portfolio" element={<AllPortfolioApp />} />
         <Route path="/ua/blog" element={<ArticlesApp />} />
         <Route path="/en/blog" element={<ArticlesApp />} />
+        <Route path="/ua/blog/article-one" element={<ArticleOneApp />} />
+        <Route path="/en/blog/article-one" element={<ArticleOneApp />} />
         <Route path="*" element={<NotFoundApp />} />
       </Routes>
     </Router>

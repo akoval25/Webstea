@@ -32,7 +32,7 @@ app.post('/send-email', (req, res) => {
     to: 'websteastudio@gmail.com', 
     subject: 'New Form Submission',
     html: `
-      <p>В нес клієнт: ${name}</p>
+      <p>В нас клієнт: ${name}</p>
       <p>Ось його телефон, подзвоніть: ${tel}</p>
       <p>Ще є пошта, напишіть: ${email}</p>
       <p>Він хоче сайт типу: ${type}</p>

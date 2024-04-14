@@ -47,12 +47,12 @@ function Portfolio() {
                     <p className="lng-portfolio-first-description">
                       {getLangText("portfolio-first-description")}
                     </p>
-                    <a
+                    {/* <a
                       href="#"
                       className="portfolio__slide-link lng-portfolio-btn"
                     >
                       {getLangText("portfolio-btn")}
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </SwiperSlide>
@@ -65,12 +65,12 @@ function Portfolio() {
                     <p className="lng-portfolio-second-description">
                       {getLangText("portfolio-second-description")}
                     </p>
-                    <a
+                    {/* <a
                       href="#"
                       className="portfolio__slide-link lng-portfolio-btn"
                     >
                       {getLangText("portfolio-btn")}
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </SwiperSlide>
@@ -83,12 +83,12 @@ function Portfolio() {
                     <p className="lng-portfolio-third-description">
                       {getLangText("portfolio-third-description")}
                     </p>
-                    <a
+                    {/* <a
                       href="#"
                       className="portfolio__slide-link lng-portfolio-btn"
                     >
                       {getLangText("portfolio-btn")}
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </SwiperSlide>
@@ -101,12 +101,12 @@ function Portfolio() {
                     <p className="lng-portfolio-fouth-description">
                       {getLangText("portfolio-fouth-description")}
                     </p>
-                    <a
+                    {/* <a
                       href="#"
                       className="portfolio__slide-link lng-portfolio-btn"
                     >
                       {getLangText("portfolio-btn")}
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </SwiperSlide>
