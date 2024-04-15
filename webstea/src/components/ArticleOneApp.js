@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Header from "./Header.js";
-import Blog from "./Blog.js";
+import SeparateArticleHeader from "./SeparateArticleHeader.js";
+import SeparateArticleFooter from "./SeparateArticleFooter.js";
 import Footer from "./Footer.js";
+import Contact from "../components/Contact.js";
 import ArticleOne from "./ArticleOne.js";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -19,8 +21,10 @@ function ArticleOneApp() {
   return (
     <React.StrictMode>
       <Header />
+      <SeparateArticleHeader />
       <ArticleOne />
-      <Blog />
+      <SeparateArticleFooter />
+      <Contact />
       <Footer />
     </React.StrictMode>
   );

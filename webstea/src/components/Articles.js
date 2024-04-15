@@ -4,20 +4,20 @@ import articleImg1 from "../images/article-item.png";
 function Articles() {
   return (
     <section className="articles section__mb section__first">
-      <div className="article__inner">
+      <div className="articles__inner">
         <div className="container">
           <a href="/" className="home-link">
             На головну
           </a>
-          <div className="article__items">
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+          <div className="articles__items">
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>
@@ -27,14 +27,14 @@ function Articles() {
                 </a>
               </div>
             </div>
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>
@@ -44,14 +44,14 @@ function Articles() {
                 </a>
               </div>
             </div>
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>
@@ -61,14 +61,14 @@ function Articles() {
                 </a>
               </div>
             </div>
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>
@@ -78,14 +78,14 @@ function Articles() {
                 </a>
               </div>
             </div>
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>
@@ -95,14 +95,14 @@ function Articles() {
                 </a>
               </div>
             </div>
-            <div className="article__item">
-              <div className="article__img">
-                <img alt="article item" src={articleImg1}></img>
+            <div className="articles__item">
+              <div className="articles__img">
+                <img alt="articles item" src={articleImg1}></img>
               </div>
-              <h3 className="article__title">
+              <h3 className="articles__title">
                 Штучний інтелект для тестувальника. Загроза чи помічник?
               </h3>
-              <p className="article__description">
+              <p className="articles__description">
                 Штучний інтелект для тестувальника. Загроза чи помічник? Штучний
                 інтелект для тестувальника. Загроза чи помічник?{" "}
               </p>

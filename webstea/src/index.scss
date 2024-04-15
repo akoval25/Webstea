@@ -593,6 +593,9 @@ p {
   .section__first {
     margin-top: 75px;
   }
+  .section__first:has(.home-link){
+    margin-top: 110px;
+  }
 
   .inner__mb{
     margin-bottom: 20px;
