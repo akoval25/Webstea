@@ -14,6 +14,11 @@ import CustomApp from "./components/CustomApp.js";
 import AllPortfolioApp from "./components/AllPortfolioApp.js";
 import ArticlesApp from "./components/ArticlesApp.js";
 import ArticleOneApp from "./components/ArticleOneApp.js";
+import ArticleTwoApp from "./components/ArticleTwoApp.js";
+import ArticleThreeApp from "./components/ArticleThreeApp.js";
+import ArticleFourApp from "./components/ArticleFourApp.js";
+import ArticleFiveApp from "./components/ArticleFiveApp.js";
+import ArticleSixApp from "./components/ArticleSixApp.js";
 import NotFoundApp from "./components/NotFoundApp.js";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -45,8 +50,18 @@ const Apps = () => {
         <Route path="/en/portfolio" element={<AllPortfolioApp />} />
         <Route path="/ua/blog" element={<ArticlesApp />} />
         <Route path="/en/blog" element={<ArticlesApp />} />
-        <Route path="/ua/blog/article-one" element={<ArticleOneApp />} />
-        <Route path="/en/blog/article-one" element={<ArticleOneApp />} />
+        <Route path="/ua/blog/ai-for-business" element={<ArticleOneApp />} />
+        <Route path="/en/blog/ai-for-business" element={<ArticleOneApp />} />
+        <Route path="/ua/blog/internet-of-things" element={<ArticleTwoApp />} />
+        <Route path="/en/blog/internet-of-things" element={<ArticleTwoApp />} />
+        <Route path="/ua/blog/blockchain-and-crypto" element={<ArticleThreeApp />} />
+        <Route path="/en/blog/blockchain-and-crypto" element={<ArticleThreeApp />} />
+        <Route path="/ua/blog/cloud-technologies" element={<ArticleFourApp />} />
+        <Route path="/en/blog/cloud-technologies" element={<ArticleFourApp />} />
+        <Route path="/ua/blog/machine-learning-in-medicine" element={<ArticleFiveApp />} />
+        <Route path="/en/blog/machine-learning-in-medicine" element={<ArticleFiveApp />} />
+        <Route path="/ua/blog/cyber-security" element={<ArticleSixApp />} />
+        <Route path="/en/blog/cyber-security" element={<ArticleSixApp />} />
         <Route path="*" element={<NotFoundApp />} />
       </Routes>
     </Router>
