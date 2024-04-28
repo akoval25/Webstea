@@ -27,7 +27,7 @@ function Custom() {
           <a className="btn">Замовити</a>
         </div>
         <div className="inner__mb component__list">
-          <h3>Переваги Сайту Каталогу</h3>
+          <h3>Переваги Індивідуального проекту</h3>
           <ul className="list-plus inner__mb">
             <li>Унікальний дизайн;</li>
             <li>Особливий функціонал;</li>
