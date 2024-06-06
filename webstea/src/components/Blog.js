@@ -49,9 +49,9 @@ function Blog() {
                     <p className="lng-blog-first-description">
                       {getLangText("blog-first-description")}
                     </p>
-                    <a href="#" className="blog__slide-link lng-blog-btn">
+                    <Link to={`${currentLangPath}/blog/ai-for-business`} className="blog__slide-link lng-blog-btn">
                       {getLangText("blog-btn")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -64,9 +64,9 @@ function Blog() {
                     <p className="lng-blog-second-description">
                       {getLangText("blog-second-description")}
                     </p>
-                    <a href="#" className="blog__slide-link lng-blog-btn">
+                    <Link to={`${currentLangPath}/blog/internet-of-things`} className="blog__slide-link lng-blog-btn">
                       {getLangText("blog-btn")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -79,9 +79,9 @@ function Blog() {
                     <p className="lng-blog-third-description">
                       {getLangText("blog-third-description")}
                     </p>
-                    <a href="#" className="blog__slide-link lng-blog-btn">
+                    <Link to={`${currentLangPath}/blog/blockchain-and-crypto`} className="blog__slide-link lng-blog-btn">
                       {getLangText("blog-btn")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -94,9 +94,9 @@ function Blog() {
                     <p className="lng-blog-fourth-description">
                       {getLangText("blog-fourth-description")}
                     </p>
-                    <a href="#" className="blog__slide-link lng-blog-btn">
+                    <Link to={`${currentLangPath}/blog/cloud-technologies`} className="blog__slide-link lng-blog-btn">
                       {getLangText("blog-btn")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -109,9 +109,9 @@ function Blog() {
                     <p className="lng-blog-fifth-description">
                       {getLangText("blog-fifth-description")}
                     </p>
-                    <a href="#" className="blog__slide-link lng-blog-btn">
+                    <Link to={`${currentLangPath}/blog/machine-learning-in-medicine`} className="blog__slide-link lng-blog-btn">
                       {getLangText("blog-btn")}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>

@@ -1,0 +1,9 @@
+.article p+*,
+.article *+p,
+.article p+p{
+    margin-top: 40px;
+}
+
+.article p{
+    font-size: 18px;
+}

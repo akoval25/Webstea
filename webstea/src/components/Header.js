@@ -37,27 +37,20 @@ function Header() {
   const menuRef = useRef(null);
   const { getLangText, currentLang } = useLang();
   const navigate = useNavigate();
-
   const toggleMenu = () => {
     menuBtnRef.current.classList.toggle("menu__btn--active");
     menuRef.current.classList.toggle("menu--active");
   };
-
   const closeMenu = () => {
     if (menuRef.current.classList.contains("menu--active")) {
       menuBtnRef.current.classList.remove("menu__btn--active");
       menuRef.current.classList.remove("menu--active");
     }
   };
-
   const handleMenuItemClick = (to) => {
     const newUrl = `/${currentLang}`;
-
-  
     navigate(newUrl);
-  
     setTimeout(() => {
-
       scroller.scrollTo(to, {
         spy: true,
         smooth: true,

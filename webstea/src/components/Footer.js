@@ -52,7 +52,7 @@ function Footer() {
           {/* <a href="#" className="logo__link">
             <img src={logo}></img>
           </a> */}
-          <ul className="footer__list">
+          {/*<ul className="footer__list">
             <li className="footer__item">
             <ScrollLink
                     to="about" 
@@ -111,7 +111,7 @@ function Footer() {
               {getLangText("footer-faq")}
             </ScrollLink>
             </li>
-          </ul>
+          </ul>*/}
           <div className="footer__contact">
             <div className="footer__contact-item">
               <p>E-mail:</p>
