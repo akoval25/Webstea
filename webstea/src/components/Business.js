@@ -1,13 +1,16 @@
 import "../styles/Business.scss";
 import landingImg from "../images/landing1x1.png";
+
 import { useLang } from "../scripts/LangContext.js";
 
 function Business() {
   const { getLangText } = useLang();
+
   return (
     <section className="landing section__mb section__first">
       <div className="container">
         <div className="section__mb">
+
           <h1 className="lng-business-title text-center">{getLangText("business-title")}</h1>
           <h2 className="lng-business-description text-center">
           {getLangText("business-description")}
@@ -15,6 +18,7 @@ function Business() {
         </div>
         <div className="inner__mb component__text-image">
           <div className="content-text">
+
             <h3 className="lng-business-first-bold desktop-visible">{getLangText("business-first-bold")}</h3>
             <p className="lng-business-first-description inner__mb">
             {getLangText("business-first-description")}
@@ -22,10 +26,12 @@ function Business() {
           </div>
           <div className="content-img">
             <h3 className="lng-business-first-bold mobile-visible text-center">{getLangText("business-first-bold")}</h3>
+
             <img alt="landing" src={landingImg}></img>
           </div>
         </div>
         <div className="text-center inner__mb">
+
           <a className="lng-business-order btn" href="#contact">{getLangText("business-order")}</a>
         </div>
         <div className="inner__mb component__list">
@@ -38,9 +44,11 @@ function Business() {
             <li className="lng-business-e-second-description">{getLangText("business-e-second-description")}</li>
             <li className="lng-business-f-second-description">{getLangText("business-f-second-description")}</li>
 
+
           </ul>
         </div>
         <div className="section__mb component__list">
+
           <h3 className="lng-business-third-bold">{getLangText("business-third-bold")}</h3>
           <ul className="list-circle">
             <li className="lng-business-a-third-description">{getLangText("business-a-third-description")}</li>
@@ -51,6 +59,7 @@ function Business() {
             <li className="lng-business-f-third-description">{getLangText("business-f-third-description")}</li>
             <li className="lng-business-g-third-description">{getLangText("business-g-third-description")}</li>
             <li className="lng-business-h-third-description">{getLangText("business-h-third-description")}</li>
+
           </ul>
         </div>
       </div>

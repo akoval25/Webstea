@@ -4,21 +4,26 @@ import landingIcon1 from "../images/landing-icon-1.svg";
 import landingIcon2 from "../images/landing-icon-2.svg";
 import landingIcon3 from "../images/landing-icon-3.svg";
 
+
 import { useLang } from "../scripts/LangContext.js";
 
 function Landing() {
   const { getLangText } = useLang();
+
   return (
     <section className="landing section__mb section__first">
       <div className="container">
         <div className="section__mb">
+
           <h1 className="lng-landing-title text-center">{getLangText("landing-title")}</h1>
           <h2 className="lng-landing-subtitle text-center">
           {getLangText("landing-subtitle")}
+
           </h2>
         </div>
         <div className="inner__mb component__text-image">
           <div className="content-text">
+
             <h3 className="lng-landing-first-bold desktop-visible">{getLangText("landing-first-bold")}</h3>
             <p className="lng-landing-first-description inner__mb">
             {getLangText("landing-first-description")}
@@ -36,12 +41,15 @@ function Landing() {
           </div>
           <div className="content-img">
           <h3 className="lng-landing-first-bold mobile-visible text-center">{getLangText("landing-first-bold")}</h3>
+
             <img alt="landing" src={landingImg}></img>
           </div>
          
         </div>
         <div className="text-center inner__mb">
+
           <a className="lng-landing-order btn" href="#contact">{getLangText("landing-order")}</a>
+
           </div>
         {/* <div className="section__mb component__flex">
           <div className="component__flex-item">
@@ -77,6 +85,7 @@ function Landing() {
               <li>Форми зворотного зв'язку</li>
               <li>Калькулятори, квізи тощо</li>
             </ul>
+
           </div>*/}
           
         </div> 
@@ -106,6 +115,7 @@ function Landing() {
           </ul>
         </div>
       
+
     </section>
   );
 }
