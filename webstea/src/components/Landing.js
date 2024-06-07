@@ -4,41 +4,44 @@ import landingIcon1 from "../images/landing-icon-1.svg";
 import landingIcon2 from "../images/landing-icon-2.svg";
 import landingIcon3 from "../images/landing-icon-3.svg";
 
+import { useLang } from "../scripts/LangContext.js";
+
 function Landing() {
+  const { getLangText } = useLang();
   return (
     <section className="landing section__mb section__first">
       <div className="container">
         <div className="section__mb">
-          <h1 className="text-center">Landing page</h1>
-          <h2 className="text-center">
-          Односторінковий сайт для рекламної чи маркетингової кампанії.
+          <h1 className="lng-landing-title text-center">{getLangText("landing-title")}</h1>
+          <h2 className="lng-landing-subtitle text-center">
+          {getLangText("landing-subtitle")}
           </h2>
         </div>
         <div className="inner__mb component__text-image">
           <div className="content-text">
-            <h3 className="desktop-visible">Що це?</h3>
-            <p className="inner__mb">
-            Лендінг фокусує увагу потенційного клієнта на продукт чи послугу та провести по всім етапам продажу. Від зацікавлення, надання необхідної інформації, беззаперечної лінії з аргументів та, врешті решт,  до цільової дії. Чи то буде здійснення покупки, чи зворотна форма для збору контактів - залежить від цілей замовника. Якщо ваша задача полягає в продажах вузького набору товарів чи збільшення кількості вхідних дзвінків, то односторінковий сайт повністю задовольнить вас.
+            <h3 className="lng-landing-first-bold desktop-visible">{getLangText("landing-first-bold")}</h3>
+            <p className="lng-landing-first-description inner__mb">
+            {getLangText("landing-first-description")}
             </p>
-            <h3>Переваги Landing Page</h3>
+            <h3 className="lng-landing-second-bold">{getLangText("landing-second-bold")}</h3>
           <ul className="list-plus inner__mb">
-            <li>Тестування маркетингових гіпотез;</li>
-            <li>Використання в якості невеликої вітрини;</li>
-            <li>Збільшення коверсійності (цільових дій: дзвінки, збір контактів і покупок);</li>
-            <li>Розширення клієнтської бази;</li>
-            <li>Фокус на конкретному товарі чи групі товарів, послуг та дії;</li>
-            <li>Швидке завантаження;</li>
-            <li>Простий дизайн із закликом до дії.</li>
+            <li className="lng-landing-second-a-description">{getLangText("landing-second-a-description")}</li>
+            <li className="lng-landing-second-b-description">{getLangText("landing-second-b-description")}</li>
+            <li className="lng-landing-second-c-description">{getLangText("landing-second-c-description")}</li>
+            <li className="lng-landing-second-d-description">{getLangText("landing-second-d-description")}</li>
+            <li className="lng-landing-second-e-description">{getLangText("landing-second-e-description")}</li>
+            <li className="lng-landing-second-f-description">{getLangText("landing-second-f-description")}</li>
+            <li className="lng-landing-second-g-description">{getLangText("landing-second-g-description")}</li>
           </ul>
           </div>
           <div className="content-img">
-          <h3 className="mobile-visible text-center">Що це?</h3>
+          <h3 className="lng-landing-first-bold mobile-visible text-center">{getLangText("landing-first-bold")}</h3>
             <img alt="landing" src={landingImg}></img>
           </div>
          
         </div>
         <div className="text-center inner__mb">
-          <a className="btn">Замовити</a>
+          <a className="lng-landing-order btn" href="#contact">{getLangText("landing-order")}</a>
           </div>
         {/* <div className="section__mb component__flex">
           <div className="component__flex-item">
@@ -74,35 +77,35 @@ function Landing() {
               <li>Форми зворотного зв'язку</li>
               <li>Калькулятори, квізи тощо</li>
             </ul>
-          </div>
+          </div>*/}
           
-        </div> */}
-        <div className="inner__mb component__list">
-          <h3>Переваги Landing Page</h3>
+        </div> 
+        {/* <div className="inner__mb component__list">
+          <h3 className="lng-landing-second-bold">{getLangText("landing-second-bold")}</h3>
           <ul className="list-plus inner__mb">
-            <li>Тестування маркетингових гіпотез;</li>
-            <li>Використання в якості невеликої вітрини;</li>
-            <li>Збільшення коверсійності (цільових дій: дзвінки, збір контактів і покупок);</li>
-            <li>Розширення клієнтської бази;</li>
-            <li>Фокус на конкретному товарі чи групі товарів, послуг та дії;</li>
-            <li>Швидке завантаження;</li>
-            <li>Простий дизайн із закликом до дії.</li>
+          <li className="lng-landing-second-a-description">{getLangText("landing-second-a-description")}</li>
+            <li className="lng-landing-second-b-description">{getLangText("landing-second-b-description")}</li>
+            <li className="lng-landing-second-c-description">{getLangText("landing-second-c-description")}</li>
+            <li className="lng-landing-second-d-description">{getLangText("landing-second-d-description")}</li>
+            <li className="lng-landing-second-e-description">{getLangText("landing-second-e-description")}</li>
+            <li className="lng-landing-second-f-description">{getLangText("landing-second-f-description")}</li>
+            <li className="lng-landing-second-g-description">{getLangText("landing-second-g-description")}</li>
           </ul>
-        </div>
+        </div> */}
         <div className="section__mb component__list">
-          <h3>Умови роботи</h3>
+          <h3 className="lng-landing-third-bold">{getLangText("landing-third-bold")}</h3>
           <ul className="list-circle">
-            <li>Консультація</li>
-            <li>Визначення вартості</li>
-            <li>Складання договору та його підписання</li>
-            <li>Створення та погодження технічного завдання</li>
-            <li>Поетапна розробка з демонстрацією проміжного результату</li>
-            <li>Тестування</li>
-            <li>Оплата по факту виконання</li>
-            <li>Підтримка та допомога з наповненням (за бажанням замовника)</li>
+            <li className="lng-landing-third-a-description">{getLangText("landing-third-a-description")}</li>
+            <li className="lng-landing-third-b-description">{getLangText("landing-third-b-description")}</li>
+            <li className="lng-landing-third-c-description">{getLangText("landing-third-c-description")}</li>
+            <li className="lng-landing-third-d-description">{getLangText("landing-third-d-description")}</li>
+            <li className="lng-landing-third-e-description">{getLangText("landing-third-e-description")}</li>
+            <li className="lng-landing-third-f-description">{getLangText("landing-third-f-description")}</li>
+            <li className="lng-landing-third-g-description">{getLangText("landing-third-g-description")}</li>
+            <li className="lng-landing-third-h-description">{getLangText("landing-third-h-description")}</li>
           </ul>
         </div>
-      </div>
+      
     </section>
   );
 }
