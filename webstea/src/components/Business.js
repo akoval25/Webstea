@@ -1,54 +1,65 @@
 import "../styles/Business.scss";
 import landingImg from "../images/landing1x1.png";
 
+import { useLang } from "../scripts/LangContext.js";
+
 function Business() {
+  const { getLangText } = useLang();
+
   return (
     <section className="landing section__mb section__first">
       <div className="container">
         <div className="section__mb">
-          <h1 className="text-center">Сайт-візитка</h1>
-          <h2 className="text-center">
-          Невеликий сайт з 5-10 сторінок з основною інформацією про компанію.
+
+          <h1 className="lng-business-title text-center">{getLangText("business-title")}</h1>
+          <h2 className="lng-business-description text-center">
+          {getLangText("business-description")}
           </h2>
         </div>
         <div className="inner__mb component__text-image">
           <div className="content-text">
-            <h3 className="desktop-visible">Що це?</h3>
-            <p className="inner__mb">
-            Головна особливість сайту-візитки полягає не у форматі, а в призначенні, тобто, в наданні необхідної інформації для відвідувачів про компанію чи пропозиції. Крім контактів на даному сайті розміщують ще портфоліо, каталог та, наприклад, про значущих клієнтів чи головні досягнення. Сайт-візитку доповнюють функціональними модулями, такими як контактна форма чи інтерактивна карта проїзду до офісу компанії. 
+
+            <h3 className="lng-business-first-bold desktop-visible">{getLangText("business-first-bold")}</h3>
+            <p className="lng-business-first-description inner__mb">
+            {getLangText("business-first-description")}
             </p>   
           </div>
           <div className="content-img">
-            <h3 className="mobile-visible text-center">Що це?</h3>
+            <h3 className="lng-business-first-bold mobile-visible text-center">{getLangText("business-first-bold")}</h3>
+
             <img alt="landing" src={landingImg}></img>
           </div>
         </div>
         <div className="text-center inner__mb">
-          <a className="btn">Замовити</a>
+
+          <a className="lng-business-order btn" href="#contact">{getLangText("business-order")}</a>
         </div>
         <div className="inner__mb component__list">
-          <h3>Переваги Сайту-візитки</h3>
+          <h3 className="lng-business-second-bold">{getLangText("business-second-bold")}</h3>
           <ul className="list-plus inner__mb">
-            <li>Лаконічна презентація компанії з використанням корпоративних елементів дизайну (акцент на впізнаваність);</li>
-            <li>Використання в якості невеликої вітрини;</li>
-            <li>Швидке завантаження (завдяки невеликій кількості сторінок);</li>
-            <li>Фокус на товарах чи пропозиціях;</li>
-            <li>Розширення клієнтської бази;</li>
-            <li>Простий дизайн із закликом до дії.</li>
+            <li className="lng-business-a-second-description">{getLangText("business-a-second-description")}</li>
+            <li className="lng-business-b-second-description">{getLangText("business-b-second-description")}</li>
+            <li className="lng-business-c-second-description">{getLangText("business-c-second-description")}</li>
+            <li className="lng-business-d-second-description">{getLangText("business-d-second-description")}</li>
+            <li className="lng-business-e-second-description">{getLangText("business-e-second-description")}</li>
+            <li className="lng-business-f-second-description">{getLangText("business-f-second-description")}</li>
+
 
           </ul>
         </div>
         <div className="section__mb component__list">
-          <h3>Умови роботи</h3>
+
+          <h3 className="lng-business-third-bold">{getLangText("business-third-bold")}</h3>
           <ul className="list-circle">
-            <li>Консультація</li>
-            <li>Визначення вартості</li>
-            <li>Складання договору та його підписання</li>
-            <li>Створення та погодження технічного завдання</li>
-            <li>Поетапна розробка з демонстрацією проміжного результату</li>
-            <li>Тестування</li>
-            <li>Оплата по факту виконання</li>
-            <li>Підтримка та допомога з наповненням (за бажанням замовника)</li>
+            <li className="lng-business-a-third-description">{getLangText("business-a-third-description")}</li>
+            <li className="lng-business-b-third-description">{getLangText("business-b-third-description")}</li>
+            <li className="lng-business-c-third-description">{getLangText("business-c-third-description")}</li>
+            <li className="lng-business-d-third-description">{getLangText("business-d-third-description")}</li>
+            <li className="lng-business-e-third-description">{getLangText("business-e-third-description")}</li>
+            <li className="lng-business-f-third-description">{getLangText("business-f-third-description")}</li>
+            <li className="lng-business-g-third-description">{getLangText("business-g-third-description")}</li>
+            <li className="lng-business-h-third-description">{getLangText("business-h-third-description")}</li>
+
           </ul>
         </div>
       </div>
