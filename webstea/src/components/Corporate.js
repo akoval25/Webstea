@@ -23,8 +23,8 @@ function Corporate() {
 
             <h3 className="lng-corporate-first-bold desktop-visible">{getLangText("corporate-first-bold")}</h3>
 
-            <p className="inner__mb">
-            Це тип сайту на якому може бути розміщена інформація про компанію та її послуги\товари, а також навчальні матеріали для працівників чи будь-які інші нетривіальні рішення. Основне покликання корпоративного сайту полягає у тому, щоб висвітлювати останні новини та налаштування взаємодії між філіями компанії і таке подібне. Варто зазначити, що під час розробки даного типу сайтів варто приділити увагу дизайну CMS (адмін-панелі), щоб працівники легко могли додавати новий контент та зміни до існуючого швидко і просто.</p>   
+            <p className="lng-corporate-first-description inner__mb">
+            {getLangText("corporate-first-description")}</p>   
           </div>
           <div className="content-img">
 
@@ -34,29 +34,29 @@ function Corporate() {
           </div>
         </div>
         <div className="text-center inner__mb">
-          <a className="btn">Замовити</a>
+          <a className="lng-corporate-order btn" href="#contact">{getLangText("corporate-order")}</a>
         </div>
         <div className="inner__mb component__list">
-          <h3>Переваги Корпоративного сайту</h3>
+          <h3 className="lng-corporate-second-bold">{getLangText("corporate-second-bold")}</h3>
           <ul className="list-plus inner__mb">
-            <li>Наявність внутрішніх баз з даними для навчання нових працівників;</li>
-            <li>Корпоративний дизайн для підтримки іміджу;</li>
-            <li>Продуманий функціонал та внутрішня логіка для швидкого додавання контенту;</li>
-            <li>Кастомні рішення для нетривіальних потреб.</li>
+            <li className="lng-corporate-second-a-description">{getLangText("corporate-second-a-description")}</li>
+            <li className="lng-corporate-second-b-description">{getLangText("corporate-second-b-description")}</li>
+            <li className="lng-corporate-second-c-description">{getLangText("corporate-second-c-description")}</li>
+            <li className="lng-corporate-second-d-description">{getLangText("corporate-second-d-description")}</li>
 
           </ul>
         </div>
         <div className="section__mb component__list">
-          <h3>Умови роботи</h3>
+          <h3 className="lng-corporate-third-bold">{getLangText("ccorporate-third-bold")}</h3>
           <ul className="list-circle">
-            <li>Консультація</li>
-            <li>Визначення вартості</li>
-            <li>Складання договору та його підписання</li>
-            <li>Створення та погодження технічного завдання</li>
-            <li>Поетапна розробка з демонстрацією проміжного результату</li>
-            <li>Тестування</li>
-            <li>Оплата по факту виконання</li>
-            <li>Підтримка та допомога з наповненням (за бажанням замовника)</li>
+            <li className="lng-corporate-third-a-description">{getLangText("corporate-third-a-description")}</li>
+            <li className="lng-corporate-third-b-description">{getLangText("corporate-third-b-description")}</li>
+            <li className="lng-corporate-third-c-description">{getLangText("corporate-third-c-description")}</li>
+            <li className="lng-corporate-third-d-description">{getLangText("corporate-third-d-description")}</li>
+            <li className="lng-corporate-third-e-description">{getLangText("corporate-third-e-description")}</li>
+            <li className="lng-corporate-third-f-description">{getLangText("corporate-third-f-description")}</li>
+            <li className="lng-corporate-third-g-description">{getLangText("corporate-third-g-description")}</li>
+            <li className="lng-corporate-third-h-description">{getLangText("corporate-third-h-description")}</li>
           </ul>
         </div>
       </div>
