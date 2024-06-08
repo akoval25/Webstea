@@ -1,11 +1,13 @@
 import "../styles/SeparateArticle.scss";
 import articleImg1 from "../images/article-item.png";
+import { useLang } from "../scripts/LangContext.js";
 
 function SeparateArticleFooter() {
+  const { getLangText } = useLang();
   return (
     <section className="articles section__mb">
-      <div>
-        <div className="container">
+       <div>
+        {/* <div className="container">
           <h2 className="text-right">Вас також може зацікавити...</h2>
           <div className="articles__items inner__mb">
             <div className="articles__item">
@@ -59,11 +61,11 @@ function SeparateArticleFooter() {
                 </a>
               </div>
             </div>
-          </div>
-          <a href="../" className="home-link">
-            На головну
+          </div> */}
+          <a href="../" className="lng-home home-link">
+          {getLangText("home")}
           </a>
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );

@@ -22,8 +22,8 @@ function Articles() {
     <section className="articles section__mb section__first">
       <div className="articles__inner">
         <div className="container">
-          <Link to={`${currentLangPath}/`} className="home-link">
-            На головну
+          <Link to={`${currentLangPath}/`} className="lng-home home-link">
+          {getLangText("home")}
           </Link>
           <div className="articles__items">
             <div className="articles__item">
@@ -32,24 +32,21 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Штучний інтелект у сучасному бізнесі: відкриття нових
-                    можливостей
+                  <h3 className="lng-blog-first-subtitle articles__title">
+                  {getLangText("blog-first-subtitle")}
                   </h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Штучний інтелект (ШІ) в сучасному бізнесі відкриває безліч
-                    нових можливостей і трансформує спосіб, яким компанії ведуть
-                    свою діяльність.
+                  <p className="lng-blog-first-description">
+                  {getLangText("blog-first-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/ai-for-business`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
@@ -60,23 +57,21 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Інтернет речей (IoT) та його вплив на наше повсякденне життя
+                  <h3 className="lng-blog-second-subtitle">
+                  {getLangText("blog-second-subtitle")}
                   </h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Інтернет речей (IoT) є однією з найбільш перспективних
-                    технологій нашого часу, яка має значний вплив на наше
-                    повсякденне життя.
+                  <p className="lng-blog-second-description">
+                  {getLangText("blog-second-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/internet-of-things`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
@@ -87,24 +82,21 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Блокчейн та криптовалюти: майбутнє фінансів у цифровому
-                    світі
+                  <h3 className="lng-blog-third-subtitle">
+                  {getLangText("blog-third-subtitle")}
                   </h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Блокчейн та криптовалюти стали одними з ключових інновацій в
-                    цифровому світі, які мають потенціал змінити обличчя
-                    фінансової системи.
+                  <p className="lng-blog-third-description">
+                  {getLangText("blog-third-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/blockchain-and-crypto`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
@@ -115,23 +107,20 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Хмарні технології: переваги та виклики для підприємств
-                  </h3>
+                  <h3 className="lng-blog-fourth-subtitle">
+                  {getLangText("blog-fourth-subtitle")}</h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Хмарні технології стали необхідною складовою сучасного
-                    бізнесу, пропонуючи підприємствам значні переваги, але й
-                    створюючи перед ними виклики.
+                  <p className="lng-blog-fourth-description">
+                  {getLangText("blog-fourth-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/cloud-technologies`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
@@ -142,24 +131,21 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Машинне навчання та його застосування в медицині: революція
-                    у сфері охорони здоров'я
+                  <h3 className="lng-blog-fifth-subtitle">
+                  {getLangText("blog-fifth-subtitle")}
                   </h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Машинне навчання (Machine Learning) в останні роки стало
-                    ключовою технологією, яка революціонізує багато галузей,
-                    зокрема і медицину.
+                  <p className="lng-blog-fifth-description">
+                  {getLangText("blog-fifth-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/machine-learning-in-medicine`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
@@ -170,24 +156,21 @@ function Articles() {
               </div>
               <div className="articles__content">
                 <div className="articles__title">
-                  <h3>
-                    Кібербезпека в епоху цифрової революції: загрози та заходи
-                    захисту
+                  <h3 className="lng-blog-sixth-subtitle">
+                  {getLangText("blog-sixth-subtitle")}
                   </h3>
                 </div>
                 <div className="articles__description">
-                  <p>
-                    Кібербезпека в епоху цифрової революції стає надзвичайно
-                    важливою, оскільки зростають як обсяги цифрових даних, так і
-                    рівень кіберзагроз.
+                  <p className="lng-blog-sixth-description">
+                  {getLangText("blog-sixth-description")}
                   </p>
                 </div>
                 <div className="articles__item-bottom">
                   <Link
                     to={`${currentLangPath}/blog/cyber-security`}
-                    className="btn"
+                    className="lng-blog-btn btn"
                   >
-                    Дивитись
+                    {getLangText("blog-btn")}
                   </Link>
                 </div>
               </div>
