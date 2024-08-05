@@ -25,6 +25,16 @@ function Corporate() {
 
             <p className="lng-corporate-first-description inner__mb">
             {getLangText("corporate-first-description")}</p>   
+            <div className="inner__mb component__list">
+          <h3 className="lng-corporate-second-bold">{getLangText("corporate-second-bold")}</h3>
+          <ul className="list-circle inner__mb">
+            <li className="lng-corporate-second-a-description">{getLangText("corporate-second-a-description")}</li>
+            <li className="lng-corporate-second-b-description">{getLangText("corporate-second-b-description")}</li>
+            <li className="lng-corporate-second-c-description">{getLangText("corporate-second-c-description")}</li>
+            <li className="lng-corporate-second-d-description">{getLangText("corporate-second-d-description")}</li>
+
+          </ul>
+        </div>
           </div>
           <div className="content-img">
 
@@ -36,18 +46,9 @@ function Corporate() {
         <div className="text-center inner__mb">
           <a className="lng-corporate-order btn" href="#contact">{getLangText("corporate-order")}</a>
         </div>
-        <div className="inner__mb component__list">
-          <h3 className="lng-corporate-second-bold">{getLangText("corporate-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
-            <li className="lng-corporate-second-a-description">{getLangText("corporate-second-a-description")}</li>
-            <li className="lng-corporate-second-b-description">{getLangText("corporate-second-b-description")}</li>
-            <li className="lng-corporate-second-c-description">{getLangText("corporate-second-c-description")}</li>
-            <li className="lng-corporate-second-d-description">{getLangText("corporate-second-d-description")}</li>
 
-          </ul>
-        </div>
         <div className="section__mb component__list">
-          <h3 className="lng-corporate-third-bold">{getLangText("ccorporate-third-bold")}</h3>
+          <h3 className="lng-corporate-third-bold">{getLangText("corporate-third-bold")}</h3>
           <ul className="list-circle">
             <li className="lng-corporate-third-a-description">{getLangText("corporate-third-a-description")}</li>
             <li className="lng-corporate-third-b-description">{getLangText("corporate-third-b-description")}</li>

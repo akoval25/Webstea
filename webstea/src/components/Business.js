@@ -22,7 +22,20 @@ function Business() {
             <h3 className="lng-business-first-bold desktop-visible">{getLangText("business-first-bold")}</h3>
             <p className="lng-business-first-description inner__mb">
             {getLangText("business-first-description")}
-            </p>   
+            </p>  
+            <div className="inner__mb component__list">
+          <h3 className="lng-business-second-bold">{getLangText("business-second-bold")}</h3>
+          <ul className="list-circle inner__mb">
+            <li className="lng-business-a-second-description">{getLangText("business-a-second-description")}</li>
+            <li className="lng-business-b-second-description">{getLangText("business-b-second-description")}</li>
+            <li className="lng-business-c-second-description">{getLangText("business-c-second-description")}</li>
+            <li className="lng-business-d-second-description">{getLangText("business-d-second-description")}</li>
+            <li className="lng-business-e-second-description">{getLangText("business-e-second-description")}</li>
+            <li className="lng-business-f-second-description">{getLangText("business-f-second-description")}</li>
+
+
+          </ul>
+        </div> 
           </div>
           <div className="content-img">
             <h3 className="lng-business-first-bold mobile-visible text-center">{getLangText("business-first-bold")}</h3>
@@ -34,19 +47,7 @@ function Business() {
 
           <a className="lng-business-order btn" href="#contact">{getLangText("business-order")}</a>
         </div>
-        <div className="inner__mb component__list">
-          <h3 className="lng-business-second-bold">{getLangText("business-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
-            <li className="lng-business-a-second-description">{getLangText("business-a-second-description")}</li>
-            <li className="lng-business-b-second-description">{getLangText("business-b-second-description")}</li>
-            <li className="lng-business-c-second-description">{getLangText("business-c-second-description")}</li>
-            <li className="lng-business-d-second-description">{getLangText("business-d-second-description")}</li>
-            <li className="lng-business-e-second-description">{getLangText("business-e-second-description")}</li>
-            <li className="lng-business-f-second-description">{getLangText("business-f-second-description")}</li>
-
-
-          </ul>
-        </div>
+        
         <div className="section__mb component__list">
 
           <h3 className="lng-business-third-bold">{getLangText("business-third-bold")}</h3>

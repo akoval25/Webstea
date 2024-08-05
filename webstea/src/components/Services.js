@@ -29,9 +29,9 @@ function Services() {
             <p className="services__text lng-services-landing-description">
               {getLangText("services-landing-description")}
             </p>
-            <p className="services__link lng-services-landing-btn">
+            {/* <p className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
           </Link>
           <Link 
             to={`${currentLangPath}/business-card`} 
@@ -42,9 +42,9 @@ function Services() {
             <p className="services__text lng-services-card-description">
               {getLangText("services-card-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            {/* <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
             </Link>
             <Link 
             to={`${currentLangPath}/e-store`}  className="services__item">
@@ -54,9 +54,9 @@ function Services() {
             <p className="services__text lng-services-shop-description">
               {getLangText("services-shop-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            {/* <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
             </Link>
             <Link 
             to={`${currentLangPath}/corporate`} className="services__item">
@@ -66,9 +66,9 @@ function Services() {
             <p className="services__text lng-services-corporate-description">
               {getLangText("services-corporate-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            {/* <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
             </Link>
             <Link 
             to={`${currentLangPath}/catalog`} className="services__item">
@@ -78,9 +78,9 @@ function Services() {
             <p className="services__text lng-services-catalog-description">
               {getLangText("services-catalog-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            {/* <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
             </Link>
             <Link 
             to={`${currentLangPath}/custom`}  className="services__item">
@@ -90,9 +90,9 @@ function Services() {
             <p className="services__text lng-services-project-description">
               {getLangText("services-project-description")}
             </p>
-            <p href="#" className="services__link lng-services-landing-btn">
+            {/* <p href="#" className="services__link lng-services-landing-btn">
               {getLangText("services-landing-btn")}
-            </p>
+            </p> */}
             </Link>
         </div>
         <div className="services__bottom">

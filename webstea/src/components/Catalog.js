@@ -7,7 +7,7 @@ function Catalog() {
   return (
     <section className="landing section__mb section__first">
       <div className="container">
-        <div className="section__mb">
+        <div className="inner__mb">
           <h1 className="lng-catalog-title text-center">{getLangText("catalog-title")}</h1>
           <h2 className="lng-catalog-description text-center">
           {getLangText("catalog-description")}
@@ -18,18 +18,9 @@ function Catalog() {
             <h3 className="lng-catalog-first-bold desktop-visible">{getLangText("catalog-first-bold")}</h3>
             <p className="lng-catalog-first-description inner__mb">
             {getLangText("catalog-first-description")}</p>   
-          </div>
-          <div className="content-img">
-            <h3 className="lng-catalog-first-bold mobile-visible text-center">{getLangText("catalog-first-bold")}</h3>
-            <img alt="landing" src={landingImg}></img>
-          </div>
-        </div>
-        <div className="text-center inner__mb">
-          <a className="lng-catalog-order btn" href="#contact">{getLangText("catalog-order")}</a>
-        </div>
-        <div className="inner__mb component__list">
+            <div className="inner__mb component__list">
           <h3 className="lng-catalog-second-bold">{getLangText("catalog-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
+          <ul className="list-circle inner__mb">
             <li className="lng-catalog-second-a-description">{getLangText("catalog-second-a-description")}</li>
             <li className="lng-catalog-second-b-description">{getLangText("catalog-second-b-description")}</li>
             <li className="lng-catalog-second-c-description">{getLangText("catalog-second-c-description")}</li>
@@ -39,6 +30,16 @@ function Catalog() {
 
           </ul>
         </div>
+          </div>
+          <div className="content-img">
+            <h3 className="lng-catalog-first-bold mobile-visible text-center">{getLangText("catalog-first-bold")}</h3>
+            <img alt="landing" src={landingImg}></img>
+          </div>
+        </div>
+        <div className="text-center inner__mb">
+          <a className="lng-catalog-order btn" href="#contact">{getLangText("catalog-order")}</a>
+        </div>
+        
         <div className="section__mb component__list">
           <h3 className="lng-catalog-third-bold">{getLangText("catalog-third-bold")}</h3>
           <ul className="list-circle">

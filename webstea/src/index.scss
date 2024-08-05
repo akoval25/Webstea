@@ -470,7 +470,7 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(20px, 5vw, 55px);
+  font-size: clamp(24px, 5vw, 55px);
 }
 
 h2 {
@@ -549,6 +549,10 @@ p {
   margin-bottom: 40px;
 }
 
+.text-center.inner__mb{
+  margin-bottom: 60px;
+}
+
 .mobile-visible {
   display: none;
 }
@@ -598,6 +602,7 @@ p {
   }
 
   .inner__mb{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
+
 }

@@ -4,19 +4,12 @@ import { useLang } from "../scripts/LangContext.js";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [contentHeight, setContentHeight] = useState(0);
-  const contentRef = useRef(null);
+  const contentRefs = useRef([]);
   const { getLangText } = useLang();
 
   const handleAccordionClick = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-    if (contentRef.current && activeIndex === index) {
-      setContentHeight(0);
-    } else if (contentRef.current) {
-      setContentHeight(contentRef.current.scrollHeight);
-    }
   };
-  
 
   const accordionItems = [
     {
@@ -25,19 +18,19 @@ function FAQ() {
     },
     {
       title: getLangText("faq-q2-title"),
-      content:getLangText("faq-q2-description"),
+      content: getLangText("faq-q2-description"),
     },
     {
       title: getLangText("faq-q3-title"),
-      content:getLangText("faq-q3-description"),
+      content: getLangText("faq-q3-description"),
     },
     {
       title: getLangText("faq-q4-title"),
-      content:getLangText("faq-q4-description"),
+      content: getLangText("faq-q4-description"),
     },
     {
       title: getLangText("faq-q5-title"),
-      content:getLangText("faq-q5-description"),
+      content: getLangText("faq-q5-description"),
     },
   ];
 
@@ -60,9 +53,12 @@ function FAQ() {
                     activeIndex === index ? "active" : ""
                   }`}
                   style={{
-                    maxHeight: activeIndex === index ? contentHeight : 0,
+                    maxHeight:
+                      activeIndex === index
+                        ? contentRefs.current[index].scrollHeight
+                        : 0,
                   }}
-                  ref={contentRef}
+                  ref={(el) => (contentRefs.current[index] = el)}
                 >
                   <p>{item.content}</p>
                 </div>
