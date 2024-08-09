@@ -38,7 +38,6 @@
 .accordion__item-content {
   overflow: hidden;
   transition: max-height 0.3s ease;
-  max-height: 0;
 }
 
 .accordion__item-content p {
@@ -49,7 +48,7 @@
 }
 
 .accordion__item-content.active {
-  max-height: none;
+  max-height: 1000px; /* або будь-яке достатньо велике значення, щоб відобразити весь контент */
 }
 
 .accordion__item:has(.accordion__item-content.active) {

@@ -18,6 +18,15 @@ function Custom() {
             <h3 className="lng-custom-first-bold desktop-visible">{getLangText("custom-first-bold")}</h3>
             <p className="lng-custom-first-description inner__mb">
             {getLangText("custom-first-description")}</p>   
+            <div className="inner__mb component__list">
+          <h3 className="lng-custom-second-bold">{getLangText("custom-second-bold")}</h3>
+          <ul className="list-circle inner__mb">
+            <li className="lng-custom-second-a-description">{getLangText("custom-second-a-description")}</li>
+            <li className="lng-custom-second-b-description">{getLangText("custom-second-b-description")}</li>
+            <li className="lng-custom-second-c-description">{getLangText("custom-second-c-description")}</li>
+            <li className="lng-custom-second-d-description">{getLangText("custom-second-d-description")}</li>
+          </ul>
+        </div>
           </div>
           <div className="content-img">
             <h3 className="lng-custom-first-bold mobile-visible text-center">{getLangText("custom-first-bold")}</h3>
@@ -27,15 +36,7 @@ function Custom() {
         <div className="text-center inner__mb">
           <a className="lng-custom-order btn" href="#contact">{getLangText("custom-order")}</a>
         </div>
-        <div className="inner__mb component__list">
-          <h3 className="lng-custom-second-bold">{getLangText("custom-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
-            <li className="lng-custom-second-a-description">{getLangText("custom-second-a-description")}</li>
-            <li className="lng-custom-second-b-description">{getLangText("custom-second-b-description")}</li>
-            <li className="lng-custom-second-c-description">{getLangText("custom-second-c-description")}</li>
-            <li className="lng-custom-second-d-description">{getLangText("custom-second-d-description")}</li>
-          </ul>
-        </div>
+        
         <div className="section__mb component__list">
           <h3 className="lng-custom-third-bold">{getLangText("custom-third-bold")}</h3>
           <ul className="list-circle">

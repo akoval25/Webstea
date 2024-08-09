@@ -29,7 +29,8 @@ function Landing() {
             {getLangText("landing-first-description")}
             </p>
             <h3 className="lng-landing-second-bold">{getLangText("landing-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
+            <div className="component__list">
+          <ul className="list-circle inner__mb">
             <li className="lng-landing-second-a-description">{getLangText("landing-second-a-description")}</li>
             <li className="lng-landing-second-b-description">{getLangText("landing-second-b-description")}</li>
             <li className="lng-landing-second-c-description">{getLangText("landing-second-c-description")}</li>
@@ -37,7 +38,7 @@ function Landing() {
             <li className="lng-landing-second-e-description">{getLangText("landing-second-e-description")}</li>
             <li className="lng-landing-second-f-description">{getLangText("landing-second-f-description")}</li>
             <li className="lng-landing-second-g-description">{getLangText("landing-second-g-description")}</li>
-          </ul>
+          </ul></div>
           </div>
           <div className="content-img">
           <h3 className="lng-landing-first-bold mobile-visible text-center">{getLangText("landing-first-bold")}</h3>
@@ -88,7 +89,7 @@ function Landing() {
 
           </div>*/}
           
-        </div> 
+        
         {/* <div className="inner__mb component__list">
           <h3 className="lng-landing-second-bold">{getLangText("landing-second-bold")}</h3>
           <ul className="list-plus inner__mb">
@@ -114,7 +115,7 @@ function Landing() {
             <li className="lng-landing-third-h-description">{getLangText("landing-third-h-description")}</li>
           </ul>
         </div>
-      
+        </div> 
 
     </section>
   );

@@ -7,8 +7,8 @@ function SeparateArticleFooter() {
   return (
     <section className="articles section__mb">
        <div>
-        {/* <div className="container">
-          <h2 className="text-right">Вас також може зацікавити...</h2>
+         <div className="container">
+        {/*  <h2 className="text-right">Вас також може зацікавити...</h2>
           <div className="articles__items inner__mb">
             <div className="articles__item">
               <div className="articles__img">
@@ -65,7 +65,7 @@ function SeparateArticleFooter() {
           <a href="../" className="lng-home home-link">
           {getLangText("home")}
           </a>
-        {/* </div> */}
+        </div>
       </div>
     </section>
   );

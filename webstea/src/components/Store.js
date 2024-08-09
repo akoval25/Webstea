@@ -22,7 +22,20 @@ function Store() {
 
             <h3 className="lng-store-first-bold desktop-visible">{getLangText("store-first-bold")}</h3>
             <p className="lng-store-first-description inner__mb">
-            {getLangText("store-first-description")}</p>   
+            {getLangText("store-first-description")}</p>  
+            <div className="inner__mb component__list">
+          <h3 className="lng-store-second-bold">{getLangText("store-second-bold")}</h3>
+          <ul className="list-circle inner__mb">
+            <li className="lng-store-second-a-description">{getLangText("store-second-a-description")}</li>
+            <li className="lng-store-second-b-description">{getLangText("store-second-b-description")}</li>
+            <li className="lng-store-second-c-description">{getLangText("store-second-c-description")}</li>
+            <li className="lng-store-second-d-description">{getLangText("store-second-d-description")}</li>
+            <li className="lng-store-second-e-description">{getLangText("store-second-e-description")}</li>
+
+
+
+          </ul>
+        </div> 
           </div>
           <div className="content-img">
             <h3 className="lng-store-first-bold mobile-visible text-center">{getLangText("store-first-bold")}</h3>
@@ -34,19 +47,7 @@ function Store() {
 
           <a className="lng-store-order btn" href="#contact">{getLangText("store-order")}</a>
         </div>
-        <div className="inner__mb component__list">
-          <h3 className="lng-store-second-bold">{getLangText("store-second-bold")}</h3>
-          <ul className="list-plus inner__mb">
-            <li className="lng-store-second-a-description">{getLangText("store-second-a-description")}</li>
-            <li className="lng-store-second-b-description">{getLangText("store-second-b-description")}</li>
-            <li className="lng-store-second-c-description">{getLangText("store-second-c-description")}</li>
-            <li className="lng-store-second-d-description">{getLangText("store-second-d-description")}</li>
-            <li className="lng-store-second-e-description">{getLangText("store-second-e-description")}</li>
-
-
-
-          </ul>
-        </div>
+        
         <div className="section__mb component__list">
 
           <h3 className="lng-store-third-bold">{getLangText("store-third-bold")}</h3>
