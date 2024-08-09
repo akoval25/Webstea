@@ -83,12 +83,12 @@ function Contact() {
                   onChange={handleChange}
                 ></input>
               </div>
-              {/* <div className="select__inner">
+              <div className="select__inner">
                 <select
                   placeholder="Тип сайту"
                   id="type"
                   className="form__select lng-contact-select"
-                  required
+                  
                   value={formState.type}
                   onChange={handleChange}
 
@@ -101,7 +101,9 @@ function Contact() {
                   <option value="catalog" className="lng-contact-catalog">{getLangText("contact-catalog")}</option>
                   <option value="individual" className="lng-contact-project">{getLangText("contact-project")}</option>
                 </select>
-              </div> */}
+              </div>
+              </div>
+              <div className="form__row">
               <div className="input__inner">
               <textarea
               id="message"
