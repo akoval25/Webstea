@@ -1,5 +1,5 @@
 import "../styles/SeparateArticle.scss";
-import articleImg from "../images/article-one.png";
+import articleImg from "../images/article-hero-6.png";
 import { useLang } from "../scripts/LangContext.js";
 
 function ArticleSix() {

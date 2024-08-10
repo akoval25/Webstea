@@ -84,6 +84,17 @@
   font-size: 32px;
   font-weight: 600;
 }
+
+.stages__slide-text--overflow{
+    height: 200px;
+    overflow-y: scroll;
+    
+}
+
+.stages__slide-text--overflow::-webkit-scrollbar-track{
+  background: orange;
+}
+
 .stages__slide-text p {
   font-size: 16px;
   font-style: normal;
