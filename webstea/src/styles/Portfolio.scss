@@ -14,8 +14,8 @@
   bottom: 0;
 }
 .portfolio__slide {
-  background-image: url(../images/site-screenshot-1.jpg);
-  background-repeat: no-repeat;
+  background: #fff;
+  position: relative;
   max-width: 620px;
   aspect-ratio: 620/380;
   padding: 15px;
@@ -23,6 +23,11 @@
 }
 
 .portfolio__slide-content {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   height: -webkit-fill-available;
@@ -45,6 +50,20 @@
 .portfolio__slide-content p {
   font-size: 16px;
   font-weight: 400;
+}
+
+.portfolio__slide-info--open{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.portfolio__slide-info--close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: $orange;
 }
 
 .portfolio__slide-link {

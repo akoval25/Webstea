@@ -5,6 +5,11 @@ import "../styles/Portfolio.scss";
 import { useLang } from "../scripts/LangContext.js";
 import { Link } from 'react-router-dom';
 import { generateUrl } from '../scripts/url.js';
+import portfolio1 from "../images/portfolio-1.png";
+import portfolio2 from "../images/portfolio-2.png";
+import portfolio3 from "../images/portfolio-3.png";
+import portfolio4 from "../images/portfolio-4.png";
+import infoIcon from "../images/info-icon.svg";
 
 import { Pagination } from "swiper/modules";
 
@@ -40,6 +45,10 @@ function Portfolio() {
             >
               <SwiperSlide>
                 <div className="portfolio__slide">
+                <button className="portfolio__slide-info--close">
+                  X
+                  </button>
+                  <img ></img>
                   <div className="portfolio__slide-content">
                     <h3 className="lng-portfolio-first-subtitle">
                       {getLangText("portfolio-first-subtitle")}
@@ -54,6 +63,9 @@ function Portfolio() {
                       {getLangText("portfolio-btn")}
                     </a> */}
                   </div>
+                  <button className="portfolio__slide-info--open">
+                  <img src={infoIcon}></img>
+                  </button>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -112,10 +124,10 @@ function Portfolio() {
               </SwiperSlide>
             </Swiper>
           </>
-          <div className="portfolio__bottom">
+          {/* <div className="portfolio__bottom">
           <Link 
             to={`${currentLangPath}/portfolio`} className="btn">See all</Link >
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

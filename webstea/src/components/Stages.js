@@ -68,9 +68,11 @@ function Stages() {
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
                       <h3 className="lng-st22">{getLangText("st22")}</h3>
-                      <p className="lng-st22-description">
-                        {getLangText("st22-description")}
-                      </p>
+                      <div className="stages__slide-text--overflow">
+                        <p className="lng-st22-description">
+                          {getLangText("st22-description")}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -80,9 +82,11 @@ function Stages() {
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
                       <h3 className="lng-st23">{getLangText("st23")}</h3>
-                      <p className="lng-st23-description">
-                        {getLangText("st23-description")}
-                      </p>
+                      <div className="stages__slide-text--overflow">
+                        <p className="lng-st23-description">
+                          {getLangText("st23-description")}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -92,9 +96,11 @@ function Stages() {
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
                       <h3 className="lng-st24">{getLangText("st24")}</h3>
-                      <p className="lng-st24-description">
-                        {getLangText("st24-description")}
-                      </p>
+                      <div className="stages__slide-text--overflow">
+                        <p className="lng-st24-description">
+                          {getLangText("st24-description")}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -104,9 +110,11 @@ function Stages() {
                   <div className="stages__slide-inner">
                     <div className="stages__slide-text">
                       <h3 className="lng-st25">{getLangText("st25")}</h3>
-                      <p className="lng-st25-description">
-                        {getLangText("st25-description")}
-                      </p>
+                      <div className="stages__slide-text--overflow">
+                        <p className="lng-st25-description">
+                          {getLangText("st25-description")}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
