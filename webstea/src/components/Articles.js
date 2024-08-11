@@ -2,7 +2,12 @@ import "../styles/Articles.scss";
 import { useLang } from "../scripts/LangContext.js";
 import { Link } from "react-router-dom";
 import { generateUrl } from "../scripts/url.js";
-import articleImg1 from "../images/article-item.png";
+import articleImg1 from "../images/article-hero-1.png";
+import articleImg2 from "../images/article-hero-2.png";
+import articleImg3 from "../images/article-hero-3.png";
+import articleImg4 from "../images/article-hero-4.png";
+import articleImg5 from "../images/article-hero-5.png";
+import articleImg6 from "../images/article-hero-6.png";
 
 function Articles() {
   const { getLangText, currentLang } = useLang();
@@ -53,7 +58,7 @@ function Articles() {
             </div>
             <div className="articles__item">
               <div className="articles__img">
-                <img alt="articles item" src={articleImg1}></img>
+                <img alt="articles item" src={articleImg2}></img>
               </div>
               <div className="articles__content">
                 <div className="articles__title">
@@ -78,7 +83,7 @@ function Articles() {
             </div>
             <div className="articles__item">
               <div className="articles__img">
-                <img alt="articles item" src={articleImg1}></img>
+                <img alt="articles item" src={articleImg3}></img>
               </div>
               <div className="articles__content">
                 <div className="articles__title">
@@ -103,7 +108,7 @@ function Articles() {
             </div>
             <div className="articles__item">
               <div className="articles__img">
-                <img alt="articles item" src={articleImg1}></img>
+                <img alt="articles item" src={articleImg4}></img>
               </div>
               <div className="articles__content">
                 <div className="articles__title">
@@ -127,7 +132,7 @@ function Articles() {
             </div>
             <div className="articles__item">
               <div className="articles__img">
-                <img alt="articles item" src={articleImg1}></img>
+                <img alt="articles item" src={articleImg5}></img>
               </div>
               <div className="articles__content">
                 <div className="articles__title">
@@ -152,7 +157,7 @@ function Articles() {
             </div>
             <div className="articles__item">
               <div className="articles__img">
-                <img alt="articles item" src={articleImg1}></img>
+                <img alt="articles item" src={articleImg6}></img>
               </div>
               <div className="articles__content">
                 <div className="articles__title">

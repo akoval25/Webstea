@@ -1,5 +1,5 @@
 import "../styles/Catalog.scss";
-import landingImg from "../images/landing1x1.png";
+import landingImg from "../images/service-5.png";
 import { useLang } from "../scripts/LangContext.js";
 
 function Catalog() {
@@ -33,7 +33,9 @@ function Catalog() {
           </div>
           <div className="content-img">
             <h3 className="lng-catalog-first-bold mobile-visible text-center">{getLangText("catalog-first-bold")}</h3>
-            <img alt="landing" src={landingImg}></img>
+            <div className="content-img-wrapper">
+              <img alt="landing" src={landingImg}></img>
+            </div>
           </div>
         </div>
         <div className="text-center inner__mb">

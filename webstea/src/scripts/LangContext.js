@@ -418,7 +418,7 @@
       "contact-details": "Project details",
       "contact-btn": "Send",
       "all-articles": "All articles",
-      "home": "Go to home",
+      "home": "Back",
       "blog-title": "Blog",
       "blog-first-subtitle": "Artificial intelligence in modern business: discovering new opportunities",
       "blog-first-description": "Artificial intelligence (AI) in modern business is opening up many new opportunities and transforming the way companies do business.",

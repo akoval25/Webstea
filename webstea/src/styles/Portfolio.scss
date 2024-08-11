@@ -49,13 +49,13 @@
   right: 25px;
   display: flex;
   flex-direction: column;
-  height: -webkit-fill-available;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
   opacity: 0;
   transition: all 0.3s;
   transform: scale(0);
   overflow-y: scroll;
+  max-height: 100%;
 }
 .portfolio__slide-content.active {
   backdrop-filter: blur(5px);

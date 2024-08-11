@@ -1,5 +1,5 @@
 import "../styles/Store.scss";
-import landingImg from "../images/landing1x1.png";
+import landingImg from "../images/service-3.png";
 
 import { useLang } from "../scripts/LangContext.js";
 
@@ -9,7 +9,7 @@ function Store() {
   return (
     <section className="landing section__mb section__first">
       <div className="container">
-        <div className="section__mb">
+        <div className="inner__mb">
 
           <h1 className="lng-store-title text-center">{getLangText("store-title")}</h1>
           <h2 className="lng-store-subtitle text-center">
@@ -40,7 +40,9 @@ function Store() {
           <div className="content-img">
             <h3 className="lng-store-first-bold mobile-visible text-center">{getLangText("store-first-bold")}</h3>
 
-            <img alt="landing" src={landingImg}></img>
+            <div className="content-img-wrapper">
+              <img alt="landing" src={landingImg}></img>
+            </div>
           </div>
         </div>
         <div className="text-center inner__mb">

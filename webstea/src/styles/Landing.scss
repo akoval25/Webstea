@@ -33,6 +33,11 @@
 
 .content-img {}
 
+.content-img-wrapper{
+    overflow: hidden;
+    clip-path: polygon(54% 5%, 86% 15%, 96% 50%, 86% 80%, 56% 93%, 23% 85%, 9% 64%, 5% 31%, 24% 9%);
+}
+
 .component__flex {
     display: flex;
     justify-content: space-around;

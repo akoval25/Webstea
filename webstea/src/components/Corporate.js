@@ -1,5 +1,5 @@
 import "../styles/Corporate.scss";
-import landingImg from "../images/landing1x1.png";
+import landingImg from "../images/service-4.png";
 
 import { useLang } from "../scripts/LangContext.js";
 
@@ -10,7 +10,7 @@ function Corporate() {
   return (
     <section className="landing section__mb section__first">
       <div className="container">
-        <div className="section__mb">
+        <div className="inner__mb">
 
           <h1 className="lng-corporate-title text-center">{getLangText("corporate-title")}</h1>
           <h2 className="lng-corporate-description text-center">
@@ -40,7 +40,9 @@ function Corporate() {
 
             <h3 className="lng-corporate-first-bold mobile-visible text-center">{getLangText("corporate-first-bold")}</h3>
 
-            <img alt="landing" src={landingImg}></img>
+            <div className="content-img-wrapper">
+              <img alt="landing" src={landingImg}></img>
+            </div>
           </div>
         </div>
         <div className="text-center inner__mb">
