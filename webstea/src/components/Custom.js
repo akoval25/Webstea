@@ -1,5 +1,5 @@
 import "../styles/Custom.scss";
-import landingImg from "../images/landing1x1.png";
+import landingImg from "../images/service-6.png";
 import { useLang } from "../scripts/LangContext.js";
 
 function Custom() {
@@ -7,7 +7,7 @@ function Custom() {
   return (
     <section className="landing section__mb section__first">
       <div className="container">
-        <div className="section__mb">
+        <div className="inner__mb">
           <h1 className="lng-custom-title text-center">{getLangText("custom-title")}</h1>
           <h2 className="lng-custom-description text-center">
           {getLangText("custom-description")}
@@ -30,7 +30,9 @@ function Custom() {
           </div>
           <div className="content-img">
             <h3 className="lng-custom-first-bold mobile-visible text-center">{getLangText("custom-first-bold")}</h3>
-            <img alt="landing" src={landingImg}></img>
+            <div className="content-img-wrapper">
+              <img alt="landing" src={landingImg}></img>
+            </div>
           </div>
         </div>
         <div className="text-center inner__mb">

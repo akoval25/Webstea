@@ -481,6 +481,7 @@ h2 {
 p {
   font-size: 16px;
   text-wrap: balance;
+  line-height: 2;
 }
 
 .text-right {
@@ -555,6 +556,13 @@ p {
 
 .mobile-visible {
   display: none;
+}
+
+
+@media (max-width: 490px) {
+p {
+  line-height: 1.5;
+}
 }
 
 @media (max-width: 768px) {

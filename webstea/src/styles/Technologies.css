@@ -31,6 +31,7 @@
 
 .technologies__group img {
   transition: all 0.3s;
+  
 }
 .technologies__group img:hover {
   transform: scale(1.1);
@@ -43,8 +44,11 @@
   .--code {
     gap: 30px;
   }
-  .--cms {
+  .--cms{
     gap: 30px;
+  }
+  .technologies__group.--cms img{
+    min-width: 80px;
   }
   .--other {
     gap: 40px;

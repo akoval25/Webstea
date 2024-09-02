@@ -14,26 +14,54 @@
   bottom: 0;
 }
 .portfolio__slide {
-  background-image: url(../images/site-screenshot-1.jpg);
-  background-repeat: no-repeat;
-  max-width: 620px;
+  background: #202020;
+  position: relative;
   aspect-ratio: 620/380;
   padding: 15px;
   transition: all 0.3s;
+  overflow-y: scroll;
+}
+
+.portfolio__slide::-webkit-scrollbar-track,
+.portfolio__slide-content::-webkit-scrollbar-track{
+	border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.portfolio__slide::-webkit-scrollbar,
+.portfolio__slide-content::-webkit-scrollbar{
+	width: 5px;
+	background-color: rgba(0, 0, 0, 0.03);
+}
+
+.portfolio__slide::-webkit-scrollbar-thumb,
+.portfolio__slide-content::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $orange;
 }
 
 .portfolio__slide-content {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 25px;
   display: flex;
   flex-direction: column;
-  height: -webkit-fill-available;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
   opacity: 0;
   transition: all 0.3s;
+  transform: scale(0);
+  overflow-y: scroll;
+  max-height: 100%;
 }
-.portfolio__slide:hover .portfolio__slide-content {
+.portfolio__slide-content.active {
   backdrop-filter: blur(5px);
   opacity: 1;
+  transform: scale(1);
+  z-index: 2;
 }
 
 .portfolio__slide-content h3 {
@@ -45,6 +73,34 @@
 .portfolio__slide-content p {
   font-size: 16px;
   font-weight: 400;
+}
+
+.portfolio__slide-info--open,
+.portfolio__slide-info--close{
+  position: fixed;
+  cursor: pointer;
+}
+
+.portfolio__slide-info--open{
+  bottom: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.portfolio__slide-info--close{
+  top: 25px;
+  right: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  color: $orange;
+  opacity: 0;
+  transition: all .3s;
+  z-index: -1;
+}
+
+.portfolio__slide-info--close.active{
+  opacity: 1;
+  z-index: 3;
 }
 
 .portfolio__slide-link {
@@ -98,13 +154,13 @@
     background-size: contain;
   }
   .portfolio__slide-content h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
   }
 
   .portfolio__slide-content p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
   }
   .portfolio__slide-content .btn {
@@ -122,11 +178,5 @@
   }
   .portfolio__slide-content {
     padding: 10px;
-  }
-  .portfolio__slide-content p {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 }

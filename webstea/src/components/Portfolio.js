@@ -3,15 +3,40 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/Portfolio.scss";
 import { useLang } from "../scripts/LangContext.js";
-import { Link } from 'react-router-dom';
-import { generateUrl } from '../scripts/url.js';
+import { Link } from "react-router-dom";
+import { generateUrl } from "../scripts/url.js";
+import portfolio1 from "../images/portfolio-1.png";
+import portfolio2 from "../images/portfolio-2.png";
+import portfolio3 from "../images/portfolio-3.png";
+import portfolio4 from "../images/portfolio-4.png";
+import infoIcon from "../images/info-icon.svg";
+import React, { useRef } from "react";
 
 import { Pagination } from "swiper/modules";
 
 function Portfolio() {
   // const { getLangText } = useLang();
   const { getLangText, currentLang } = useLang();
-  const currentLangPath = generateUrl(currentLang, '');
+  const currentLangPath = generateUrl(currentLang, "");
+
+
+  const infoBtnCloseRefs = useRef([]);
+  const infoBtnOpenRefs = useRef([]);
+  const infoRefs = useRef([]);
+
+  const openBtn = (index) => {
+    infoBtnCloseRefs.current[index].classList.toggle("active");
+    infoRefs.current[index].classList.toggle("active");
+  };
+
+  const closeBtn = (index) => {
+    if (infoRefs.current[index].classList.contains("active")) {
+      infoBtnCloseRefs.current[index].classList.remove("active");
+      infoRefs.current[index].classList.remove("active");
+    }
+  };
+
+  const portfolios = [portfolio1, portfolio2, portfolio3, portfolio4];
 
   return (
     <section id="portfolio" className="portfolio section__mb">
@@ -38,84 +63,44 @@ function Portfolio() {
                 },
               }}
             >
-              <SwiperSlide>
+              {portfolios.map((portfolio, index) => (
+              <SwiperSlide key={index}>
                 <div className="portfolio__slide">
-                  <div className="portfolio__slide-content">
-                    <h3 className="lng-portfolio-first-subtitle">
-                      {getLangText("portfolio-first-subtitle")}
+                  <button
+                    className="portfolio__slide-info--close"
+                    ref={(el) => (infoBtnCloseRefs.current[index] = el)}
+                    onClick={() => closeBtn(index)}
+                  >
+                    X
+                  </button>
+                  <img src={portfolio} alt={`Portfolio ${index + 1}`} />
+                  <div
+                    className="portfolio__slide-content"
+                    ref={(el) => (infoRefs.current[index] = el)}
+                  >
+                    <h3 className={`lng-portfolio-${index + 1}-subtitle`}>
+                      {getLangText(`portfolio-${index + 1}-subtitle`)}
                     </h3>
-                    <p className="lng-portfolio-first-description">
-                      {getLangText("portfolio-first-description")}
+                    <p className={`lng-portfolio-${index + 1}-description`}>
+                      {getLangText(`portfolio-${index + 1}-description`)}
                     </p>
-                    {/* <a
-                      href="#"
-                      className="portfolio__slide-link lng-portfolio-btn"
-                    >
-                      {getLangText("portfolio-btn")}
-                    </a> */}
                   </div>
+                  <button
+                    className="portfolio__slide-info--open"
+                    ref={(el) => (infoBtnOpenRefs.current[index] = el)}
+                    onClick={() => openBtn(index)}
+                  >
+                    <img src={infoIcon} alt="Info Icon" />
+                  </button>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="portfolio__slide">
-                  <div className="portfolio__slide-content">
-                    <h3 className="lng-portfolio-second-subtitle">
-                      {getLangText("portfolio-second-subtitle")}
-                    </h3>
-                    <p className="lng-portfolio-second-description">
-                      {getLangText("portfolio-second-description")}
-                    </p>
-                    {/* <a
-                      href="#"
-                      className="portfolio__slide-link lng-portfolio-btn"
-                    >
-                      {getLangText("portfolio-btn")}
-                    </a> */}
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="portfolio__slide">
-                  <div className="portfolio__slide-content">
-                    <h3 className="lng-portfolio-third-subtitle">
-                      {getLangText("portfolio-third-subtitle")}
-                    </h3>
-                    <p className="lng-portfolio-third-description">
-                      {getLangText("portfolio-third-description")}
-                    </p>
-                    {/* <a
-                      href="#"
-                      className="portfolio__slide-link lng-portfolio-btn"
-                    >
-                      {getLangText("portfolio-btn")}
-                    </a> */}
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="portfolio__slide">
-                  <div className="portfolio__slide-content">
-                    <h3 className="lng-portfolio-fouth-subtitle">
-                      {getLangText("portfolio-fouth-subtitle")}
-                    </h3>
-                    <p className="lng-portfolio-fouth-description">
-                      {getLangText("portfolio-fouth-description")}
-                    </p>
-                    {/* <a
-                      href="#"
-                      className="portfolio__slide-link lng-portfolio-btn"
-                    >
-                      {getLangText("portfolio-btn")}
-                    </a> */}
-                  </div>
-                </div>
-              </SwiperSlide>
+            ))}
             </Swiper>
           </>
-          <div className="portfolio__bottom">
+          {/* <div className="portfolio__bottom">
           <Link 
             to={`${currentLangPath}/portfolio`} className="btn">See all</Link >
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

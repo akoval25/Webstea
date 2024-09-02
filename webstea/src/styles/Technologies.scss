@@ -39,13 +39,16 @@
 
 @media (max-width: 768px) {
   .technologies__group img {
-    max-width: 12%;
+    max-width: 14%;
   }
   .--code {
     gap: 30px;
   }
   .--cms {
     gap: 30px;
+  }
+  .technologies__group.--cms img{
+    min-width: 110px;
   }
   .--other {
     gap: 40px;
